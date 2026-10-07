@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+scan-output/
+*-review/
+downloads/
+sources/
+*.zip

@@ -1,0 +1,21 @@
+{
+  "canonical_handwritten": {
+    "predicate": "handwritten == true AND scope_api == fsr_read AND canonical_default_included == true",
+    "description": "Primary borrowed fixed-width/codepoint representations and aliases/layout providers; original project handwritten functions, excluding generated files and non-handwritten vendor/compiler/backport bodies."
+  },
+  "canonical_default_core": {
+    "predicate": "scope_api == fsr_read AND canonical_default_included == true",
+    "description": "Same primary representation scope, all origins accepted by canonical default file selection, including vendor generic algorithms, compiler/runtime, CPython copy/backport and SIP runtime."
+  },
+  "core_all_origins": {
+    "predicate": "scope_api == fsr_read",
+    "description": "Primary representation scope plus excluded generated-file and compatibility-file supplements."
+  },
+  "all_inventory": {
+    "predicate": "all classified function records",
+    "description": "All preceding scopes plus legacy wchar/pointer APIs, caller-owned UCS4 copies, UTF8 byte/cache consumers, remote raw layout, test consumers and source operands of write APIs."
+  },
+  "canonical_default_file_selection": "Exclude basename pythoncapi_compat.h and files whose first line matches the frozen Cython-generated marker. Semantic exclusions still apply within every file.",
+  "count_unit": "One source function keyed by package/version/archive path/function_start. Package category sets and B subtype tags overlap.",
+  "not_an_fsr_requirement_count": "B includes fixed scalar reads and monotonic current-cursor continuations; no automatic cache requirement follows."
+}

@@ -1,0 +1,1167 @@
+{
+  "scope": {
+    "aliases": [
+      "PyArray_Scalar",
+      "PyArray_ToScalar",
+      "read_rows"
+    ],
+    "scan": "Every literal occurrence across all retained NumPy sources excluding generated Cython; first-layer scalar calls plus direct macro alias invocations only. No expansion of generic transitive call graphs.",
+    "direct_api_site_count_change": 0
+  },
+  "traces": [
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/__init__.cython-30.pxd",
+      "source_sha256": "5ebeacf05054237c65c891ad5ba4ad63c700f77281f619adb18e363a50adea8b",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 17767,
+      "start": 538,
+      "end": 538,
+      "expression_exact": "PyArray_ToScalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "cython_declaration",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/__init__.cython-30.pxd",
+      "source_sha256": "5ebeacf05054237c65c891ad5ba4ad63c700f77281f619adb18e363a50adea8b",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 20788,
+      "start": 599,
+      "end": 599,
+      "expression_exact": "PyArray_Scalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "comment_nonuse",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/code_generators/numpy_api.py",
+      "source_sha256": "30b7f62d5e610af016c6b70f15ecd6af62342312c9b0b992af76adbaca4c5797",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 5768,
+      "start": 137,
+      "end": 137,
+      "expression_exact": "PyArray_Scalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "c_api_export_registry",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/include/numpy/ndarrayobject.h",
+      "source_sha256": "058e0892232db76affedbd4a2824f868df8319b8cf6caa125b24dc78196ac0fc",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 5233,
+      "start": 120,
+      "end": 120,
+      "expression_exact": "PyArray_ToScalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "macro_alias_definition",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/include/numpy/ndarrayobject.h",
+      "source_sha256": "058e0892232db76affedbd4a2824f868df8319b8cf6caa125b24dc78196ac0fc",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 5271,
+      "start": 121,
+      "end": 121,
+      "expression_exact": "PyArray_Scalar(data, PyArray_DESCR(arr), (PyObject *)arr)",
+      "arguments_exact": [
+        "data",
+        "PyArray_DESCR(arr)",
+        "(PyObject *)arr"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/include/numpy/ndarrayobject.h",
+      "source_sha256": "058e0892232db76affedbd4a2824f868df8319b8cf6caa125b24dc78196ac0fc",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 10801,
+      "start": 261,
+      "end": 261,
+      "expression_exact": "PyArray_Scalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "comment_nonuse",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/arraytypes.c.src",
+      "source_sha256": "382dc34bc41836700b065dec331559fd013a7a050b221bea79bd469a42ee88a9",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 4600,
+      "start": 176,
+      "end": 177,
+      "expression_exact": "PyArray_ToScalar(PyArray_BYTES((PyArrayObject *)op),\n                                      (PyArrayObject *)op)",
+      "arguments_exact": [
+        "PyArray_BYTES((PyArrayObject *)op)",
+        "(PyArrayObject *)op"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/arraytypes.c.src",
+      "source_sha256": "382dc34bc41836700b065dec331559fd013a7a050b221bea79bd469a42ee88a9",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 16850,
+      "start": 604,
+      "end": 604,
+      "expression_exact": "PyArray_Scalar(ip, PyArray_DESCR((PyArrayObject *)ap), NULL)",
+      "arguments_exact": [
+        "ip",
+        "PyArray_DESCR((PyArrayObject *)ap)",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "LONGDOUBLE_getitem uses longdouble dtype, not Unicode."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/arraytypes.c.src",
+      "source_sha256": "382dc34bc41836700b065dec331559fd013a7a050b221bea79bd469a42ee88a9",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 17759,
+      "start": 638,
+      "end": 638,
+      "expression_exact": "PyArray_Scalar(ip, PyArray_DESCR((PyArrayObject *)ap), NULL)",
+      "arguments_exact": [
+        "ip",
+        "PyArray_DESCR((PyArrayObject *)ap)",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "CLONGDOUBLE_getitem uses complex longdouble dtype, not Unicode."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/arraytypes.c.src",
+      "source_sha256": "382dc34bc41836700b065dec331559fd013a7a050b221bea79bd469a42ee88a9",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 44087,
+      "start": 1553,
+      "end": 1553,
+      "expression_exact": "PyArray_Scalar(ip, PyArray_DESCR(aip), (PyObject *)aip)",
+      "arguments_exact": [
+        "ip",
+        "PyArray_DESCR(aip)",
+        "(PyObject *)aip"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation. Template from kinds includes STRING,UNICODE,VOID; only UNICODE specialization applicable."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/arraytypes.c.src",
+      "source_sha256": "382dc34bc41836700b065dec331559fd013a7a050b221bea79bd469a42ee88a9",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 45481,
+      "start": 1600,
+      "end": 1600,
+      "expression_exact": "PyArray_Scalar(ip, PyArray_DESCR(aip), (PyObject *)aip)",
+      "arguments_exact": [
+        "ip",
+        "PyArray_DESCR(aip)",
+        "(PyObject *)aip"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Template from types are BOOL/numeric/datetime/timedelta; Unicode/STRING/VOID only destination, not source descriptor."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/dtypemeta.h",
+      "source_sha256": "1ce26bfea10ea10ac624ef6b317eb76229294f3989432d98aa912f0f25f90ea5",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 11685,
+      "start": 300,
+      "end": 300,
+      "expression_exact": "PyArray_Scalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "comment_nonuse",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/dtypemeta.h",
+      "source_sha256": "1ce26bfea10ea10ac624ef6b317eb76229294f3989432d98aa912f0f25f90ea5",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 11781,
+      "start": 302,
+      "end": 302,
+      "expression_exact": "PyArray_Scalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "comment_nonuse",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/iterators.c",
+      "source_sha256": "cc1c4d472e1926cab6e9f6bd8b76bac331946848cd789ffe0d7fc1b7c6e6b031",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 8444,
+      "start": 330,
+      "end": 330,
+      "expression_exact": "PyArray_ToScalar(it->dataptr, it->ao)",
+      "arguments_exact": [
+        "it->dataptr",
+        "it->ao"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/iterators.c",
+      "source_sha256": "cc1c4d472e1926cab6e9f6bd8b76bac331946848cd789ffe0d7fc1b7c6e6b031",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 11992,
+      "start": 448,
+      "end": 448,
+      "expression_exact": "PyArray_ToScalar(self->dataptr, self->ao)",
+      "arguments_exact": [
+        "self->dataptr",
+        "self->ao"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/iterators.c",
+      "source_sha256": "cc1c4d472e1926cab6e9f6bd8b76bac331946848cd789ffe0d7fc1b7c6e6b031",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 15515,
+      "start": 564,
+      "end": 564,
+      "expression_exact": "PyArray_ToScalar(self->dataptr, self->ao)",
+      "arguments_exact": [
+        "self->dataptr",
+        "self->ao"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/iterators.c",
+      "source_sha256": "cc1c4d472e1926cab6e9f6bd8b76bac331946848cd789ffe0d7fc1b7c6e6b031",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 16247,
+      "start": 586,
+      "end": 586,
+      "expression_exact": "PyArray_ToScalar(self->dataptr, self->ao)",
+      "arguments_exact": [
+        "self->dataptr",
+        "self->ao"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/iterators.c",
+      "source_sha256": "cc1c4d472e1926cab6e9f6bd8b76bac331946848cd789ffe0d7fc1b7c6e6b031",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 40542,
+      "start": 1410,
+      "end": 1410,
+      "expression_exact": "PyArray_ToScalar(it->dataptr, it->ao)",
+      "arguments_exact": [
+        "it->dataptr",
+        "it->ao"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/mapping.c",
+      "source_sha256": "df3c6187a6ec401dea77b671ea08f17a605bee42297fd70b0ffc2e9dfdcc83f1",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 46795,
+      "start": 1359,
+      "end": 1359,
+      "expression_exact": "PyArray_Scalar(item, PyArray_DESCR(self), (PyObject *)self)",
+      "arguments_exact": [
+        "item",
+        "PyArray_DESCR(self)",
+        "(PyObject *)self"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/mapping.c",
+      "source_sha256": "df3c6187a6ec401dea77b671ea08f17a605bee42297fd70b0ffc2e9dfdcc83f1",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 51920,
+      "start": 1533,
+      "end": 1534,
+      "expression_exact": "PyArray_Scalar(item, PyArray_DESCR(self),\n                                             (PyObject *)self)",
+      "arguments_exact": [
+        "item",
+        "PyArray_DESCR(self)",
+        "(PyObject *)self"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/multiarraymodule.c",
+      "source_sha256": "1bfda5658c09101dd6557fcb6f235ed63b0f57cdf01b07fb9e3166a25f724c64",
+      "origin": "generated_other",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 65995,
+      "start": 2231,
+      "end": 2231,
+      "expression_exact": "PyArray_Scalar(dptr, typecode, base)",
+      "arguments_exact": [
+        "dptr",
+        "typecode",
+        "base"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation. Retained origin classifier marks generated_other; this is supporting wrapper trace only, not a canonical API expression or Cython-generated overlap."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/multiarraymodule.c",
+      "source_sha256": "1bfda5658c09101dd6557fcb6f235ed63b0f57cdf01b07fb9e3166a25f724c64",
+      "origin": "generated_other",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 68544,
+      "start": 2321,
+      "end": 2321,
+      "expression_exact": "PyArray_Scalar(&count, descr, NULL)",
+      "arguments_exact": [
+        "&count",
+        "descr",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "descr is explicitly NPY_INTP count result. Retained origin classifier marks generated_other; this is supporting wrapper trace only, not a canonical API expression or Cython-generated overlap."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/multiarraymodule.c",
+      "source_sha256": "1bfda5658c09101dd6557fcb6f235ed63b0f57cdf01b07fb9e3166a25f724c64",
+      "origin": "generated_other",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 118298,
+      "start": 4025,
+      "end": 4025,
+      "expression_exact": "PyArray_ToScalar(PyArray_ITER_DATA(it), it->ao)",
+      "arguments_exact": [
+        "PyArray_ITER_DATA(it)",
+        "it->ao"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation. Retained origin classifier marks generated_other; this is supporting wrapper trace only, not a canonical API expression or Cython-generated overlap."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/multiarraymodule.c",
+      "source_sha256": "1bfda5658c09101dd6557fcb6f235ed63b0f57cdf01b07fb9e3166a25f724c64",
+      "origin": "generated_other",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 120354,
+      "start": 4098,
+      "end": 4098,
+      "expression_exact": "PyArray_ToScalar(in_iter->dataptr, in_iter->ao)",
+      "arguments_exact": [
+        "in_iter->dataptr",
+        "in_iter->ao"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation. Retained origin classifier marks generated_other; this is supporting wrapper trace only, not a canonical API expression or Cython-generated overlap."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/multiarraymodule.c",
+      "source_sha256": "1bfda5658c09101dd6557fcb6f235ed63b0f57cdf01b07fb9e3166a25f724c64",
+      "origin": "generated_other",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 132032,
+      "start": 4517,
+      "end": 4517,
+      "expression_exact": "PyArray_ToScalar(buffer_data, buffer_array)",
+      "arguments_exact": [
+        "buffer_data",
+        "buffer_array"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation. Retained origin classifier marks generated_other; this is supporting wrapper trace only, not a canonical API expression or Cython-generated overlap."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalarapi.c",
+      "source_sha256": "a0079090d38f07c9f1ee7f9177b3e3e9c525b5498713ddd1252bea0a25620bb3",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 14217,
+      "start": 464,
+      "end": 464,
+      "expression_exact": "PyArray_Scalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "wrapper_definition",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalarapi.c",
+      "source_sha256": "a0079090d38f07c9f1ee7f9177b3e3e9c525b5498713ddd1252bea0a25620bb3",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 19123,
+      "start": 628,
+      "end": 628,
+      "expression_exact": "PyArray_ToScalar(PyArray_DATA(mp), mp)",
+      "arguments_exact": [
+        "PyArray_DATA(mp)",
+        "mp"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 52471,
+      "start": 1918,
+      "end": 1918,
+      "expression_exact": "PyArray_Scalar(ptr, typecode, NULL)",
+      "arguments_exact": [
+        "ptr",
+        "typecode",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "ComplexFloating real component -> real floating dtype."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 53209,
+      "start": 1945,
+      "end": 1945,
+      "expression_exact": "PyArray_Scalar(ptr + typecode->elsize, typecode, NULL)",
+      "arguments_exact": [
+        "ptr + typecode->elsize",
+        "typecode",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "ComplexFloating imaginary component -> real floating dtype."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 53625,
+      "start": 1955,
+      "end": 1955,
+      "expression_exact": "PyArray_Scalar((char *)&obj, newtype, NULL)",
+      "arguments_exact": [
+        "(char *)&obj",
+        "newtype",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Descriptor explicitly NPY_OBJECT, not Unicode."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 53944,
+      "start": 1966,
+      "end": 1966,
+      "expression_exact": "PyArray_Scalar(temp, typecode, NULL)",
+      "arguments_exact": [
+        "temp",
+        "typecode",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 59981,
+      "start": 2186,
+      "end": 2186,
+      "expression_exact": "PyArray_Scalar",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "comment_nonuse",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 60139,
+      "start": 2190,
+      "end": 2190,
+      "expression_exact": "PyArray_Scalar(data, descr, NULL)",
+      "arguments_exact": [
+        "data",
+        "descr",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Zero-sized VOID scalar NULL data branch; no Unicode constructor input."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 61196,
+      "start": 2217,
+      "end": 2217,
+      "expression_exact": "PyArray_Scalar(PyArray_DATA(tmp), descr, (PyObject *)tmp)",
+      "arguments_exact": [
+        "PyArray_DATA(tmp)",
+        "descr",
+        "(PyObject *)tmp"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 62297,
+      "start": 2242,
+      "end": 2242,
+      "expression_exact": "PyArray_Scalar(newmem, descr, NULL)",
+      "arguments_exact": [
+        "newmem",
+        "descr",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 100548,
+      "start": 3593,
+      "end": 3593,
+      "expression_exact": "PyArray_Scalar(NULL, typecode, NULL)",
+      "arguments_exact": [
+        "NULL",
+        "typecode",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation. Template includes Unicode constructor specialization; other specializations are not Unicode."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/scalartypes.c.src",
+      "source_sha256": "16645b91a059f3c11388cebf86e5a909991dc805d2442816954f26cc749ce38d",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 101402,
+      "start": 3621,
+      "end": 3621,
+      "expression_exact": "PyArray_ToScalar(PyArray_DATA(arr), arr)",
+      "arguments_exact": [
+        "PyArray_DATA(arr)",
+        "arr"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation. Template includes Unicode constructor specialization; other specializations are not Unicode."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/strfuncs.c",
+      "source_sha256": "70ce97497b295bebf59f3b89e6a22f2b7bf36086158749a8ddfdff7b17e1347e",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_ToScalar",
+      "character_offset": 2229,
+      "start": 80,
+      "end": 80,
+      "expression_exact": "PyArray_ToScalar(PyArray_DATA(self), self)",
+      "arguments_exact": [
+        "PyArray_DATA(self)",
+        "self"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_ToScalar -> PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/stringdtype/casts.cpp",
+      "source_sha256": "e60af3e56c4338df58ab6a7f2999ad34b0f122552b65bee01c80c1524e4f66f4",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 37959,
+      "start": 1245,
+      "end": 1245,
+      "expression_exact": "PyArray_Scalar(in, float_descr, NULL)",
+      "arguments_exact": [
+        "in",
+        "float_descr",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "numeric_or_other_nonunicode_call",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "float_to_string source descriptor is numeric floating dtype."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/textreading/readtext.c",
+      "source_sha256": "d9270da4cef5e51a72b3ddc9acbe60df07fcaa8cfcbae0219cc232c5dfe26729",
+      "origin": "handwritten_candidate",
+      "symbol": "read_rows",
+      "character_offset": 2355,
+      "start": 70,
+      "end": 73,
+      "expression_exact": "read_rows(\n            s, max_rows, num_fields, ft, pc,\n            num_usecols, usecols, skiplines, converters,\n            NULL, out_dtype, homogeneous)",
+      "arguments_exact": [
+        "s",
+        "max_rows",
+        "num_fields",
+        "ft",
+        "pc",
+        "num_usecols",
+        "usecols",
+        "skiplines",
+        "converters",
+        "NULL",
+        "out_dtype",
+        "homogeneous"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-005"
+      ],
+      "route": "read_rows -> conversion-error FromKindAndData",
+      "call_or_activation_notes": "Only when field conversion fails, downstream read_rows diagnostic reconstructs owned UCS4 field."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/textreading/rows.c",
+      "source_sha256": "f8f80b9ee59e8551e111d6094326fe867726a2a9dc5d377e49389bcc4084919b",
+      "origin": "handwritten_candidate",
+      "symbol": "read_rows",
+      "character_offset": 5931,
+      "start": 167,
+      "end": 167,
+      "expression_exact": "read_rows",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "wrapper_definition",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-005"
+      ],
+      "route": "read_rows -> conversion-error FromKindAndData",
+      "call_or_activation_notes": "Only when field conversion fails, downstream read_rows diagnostic reconstructs owned UCS4 field."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/multiarray/textreading/rows.h",
+      "source_sha256": "853e0c7bd38ff5f0110edd6b22d4c03b11c65dd90f23f52f42578d96eaaaad0a",
+      "origin": "handwritten_candidate",
+      "symbol": "read_rows",
+      "character_offset": 315,
+      "start": 15,
+      "end": 15,
+      "expression_exact": "read_rows",
+      "arguments_exact": null,
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "declaration_nonuse",
+      "static_use": false,
+      "constructor_reachable": "no_this_branch",
+      "implementation_case_ids": [
+        "fromkind-native-005"
+      ],
+      "route": "read_rows -> conversion-error FromKindAndData",
+      "call_or_activation_notes": "Only when field conversion fails, downstream read_rows diagnostic reconstructs owned UCS4 field."
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.3",
+      "path": "numpy-2.5.3/numpy/_core/src/umath/ufunc_object.c",
+      "source_sha256": "4f9bbf5f7086b7758fae42326f03f927e1644a955a7b9de54ce3a9a6f10414d2",
+      "origin": "handwritten_candidate",
+      "symbol": "PyArray_Scalar",
+      "character_offset": 154620,
+      "start": 4574,
+      "end": 4574,
+      "expression_exact": "PyArray_Scalar(out, dt, NULL)",
+      "arguments_exact": [
+        "out",
+        "dt",
+        "NULL"
+      ],
+      "usage_form": "supporting_wrapper_trace",
+      "direct_use": false,
+      "disposition": "dtype_conditional_wrapper_invocation",
+      "static_use": true,
+      "constructor_reachable": "conditional_or_yes",
+      "implementation_case_ids": [
+        "fromkind-native-001",
+        "fromkind-native-002"
+      ],
+      "route": "PyArray_Scalar -> NPY_UNICODE/UNICODE_getitem",
+      "call_or_activation_notes": "Scalar input array/dtype may be Unicode; PyArray_Scalar selects NPY_UNICODE constructor or delegates dtype getitem (UNICODE_getitem also inventoried). Other dtype branches do not reach this Unicode API. Generic dtype activation is conditional, not asserted for every invocation."
+    }
+  ]
+}

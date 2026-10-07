@@ -1,0 +1,793 @@
+[
+  {
+    "group": "all",
+    "usage_form": "any",
+    "packages": 32,
+    "files": 60,
+    "static_sites": 168,
+    "review_families": 49,
+    "package_names": [
+      "aiocsv",
+      "aiohttp",
+      "apsw",
+      "asyncpg",
+      "biopython",
+      "cffi",
+      "cftime",
+      "cython",
+      "debugpy",
+      "dependency-injector",
+      "gensim",
+      "gevent",
+      "grapheme",
+      "levenshtein",
+      "librt",
+      "lxml",
+      "marisa-trie",
+      "mutf8",
+      "mypy",
+      "numba",
+      "numpy",
+      "pyahocorasick",
+      "pydevd",
+      "pyjson5",
+      "pyqt5",
+      "pyqt6",
+      "pysam",
+      "rapidfuzz",
+      "regex",
+      "srsly",
+      "ujson",
+      "yarl"
+    ]
+  },
+  {
+    "group": "all",
+    "usage_form": "c_template_api_call",
+    "packages": 1,
+    "files": 2,
+    "static_sites": 2,
+    "review_families": 2,
+    "package_names": [
+      "numpy"
+    ]
+  },
+  {
+    "group": "all",
+    "usage_form": "direct_api_call",
+    "packages": 30,
+    "files": 47,
+    "static_sites": 80,
+    "review_families": 43,
+    "package_names": [
+      "aiocsv",
+      "aiohttp",
+      "apsw",
+      "asyncpg",
+      "biopython",
+      "cffi",
+      "cftime",
+      "cython",
+      "debugpy",
+      "dependency-injector",
+      "gensim",
+      "gevent",
+      "grapheme",
+      "levenshtein",
+      "librt",
+      "lxml",
+      "marisa-trie",
+      "mutf8",
+      "mypy",
+      "numpy",
+      "pydevd",
+      "pyjson5",
+      "pyqt5",
+      "pyqt6",
+      "pysam",
+      "rapidfuzz",
+      "regex",
+      "srsly",
+      "ujson",
+      "yarl"
+    ]
+  },
+  {
+    "group": "all",
+    "usage_form": "emitted_c_api_call",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "numpy"
+    ]
+  },
+  {
+    "group": "all",
+    "usage_form": "forwarding_api_call",
+    "packages": 2,
+    "files": 2,
+    "static_sites": 3,
+    "review_families": 2,
+    "package_names": [
+      "apsw",
+      "pyahocorasick"
+    ]
+  },
+  {
+    "group": "all",
+    "usage_form": "llvm_api_call_emitter",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "numba"
+    ]
+  },
+  {
+    "group": "all",
+    "usage_form": "macro_dispatch_actual_call",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "pyahocorasick"
+    ]
+  },
+  {
+    "group": "all",
+    "usage_form": "wrapper_call",
+    "packages": 21,
+    "files": 31,
+    "static_sites": 80,
+    "review_families": 20,
+    "package_names": [
+      "aiohttp",
+      "asyncpg",
+      "cffi",
+      "cftime",
+      "debugpy",
+      "dependency-injector",
+      "gensim",
+      "gevent",
+      "grapheme",
+      "levenshtein",
+      "librt",
+      "lxml",
+      "marisa-trie",
+      "mypy",
+      "numba",
+      "numpy",
+      "pydevd",
+      "pyjson5",
+      "pysam",
+      "rapidfuzz",
+      "regex"
+    ]
+  },
+  {
+    "group": "codegen",
+    "usage_form": "any",
+    "packages": 2,
+    "files": 2,
+    "static_sites": 2,
+    "review_families": 2,
+    "package_names": [
+      "numba",
+      "numpy"
+    ]
+  },
+  {
+    "group": "codegen",
+    "usage_form": "c_template_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "codegen",
+    "usage_form": "direct_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "codegen",
+    "usage_form": "emitted_c_api_call",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "numpy"
+    ]
+  },
+  {
+    "group": "codegen",
+    "usage_form": "forwarding_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "codegen",
+    "usage_form": "llvm_api_call_emitter",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "numba"
+    ]
+  },
+  {
+    "group": "codegen",
+    "usage_form": "macro_dispatch_actual_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "codegen",
+    "usage_form": "wrapper_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "cython_template",
+    "usage_form": "any",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "cython"
+    ]
+  },
+  {
+    "group": "cython_template",
+    "usage_form": "c_template_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "cython_template",
+    "usage_form": "direct_api_call",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "cython"
+    ]
+  },
+  {
+    "group": "cython_template",
+    "usage_form": "emitted_c_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "cython_template",
+    "usage_form": "forwarding_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "cython_template",
+    "usage_form": "llvm_api_call_emitter",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "cython_template",
+    "usage_form": "macro_dispatch_actual_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "cython_template",
+    "usage_form": "wrapper_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_cython",
+    "usage_form": "any",
+    "packages": 15,
+    "files": 20,
+    "static_sites": 88,
+    "review_families": 15,
+    "package_names": [
+      "aiohttp",
+      "asyncpg",
+      "cftime",
+      "debugpy",
+      "dependency-injector",
+      "gensim",
+      "gevent",
+      "grapheme",
+      "levenshtein",
+      "lxml",
+      "marisa-trie",
+      "pydevd",
+      "pyjson5",
+      "pysam",
+      "rapidfuzz"
+    ]
+  },
+  {
+    "group": "generated_cython",
+    "usage_form": "c_template_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_cython",
+    "usage_form": "direct_api_call",
+    "packages": 14,
+    "files": 18,
+    "static_sites": 34,
+    "review_families": 12,
+    "package_names": [
+      "aiohttp",
+      "asyncpg",
+      "cftime",
+      "debugpy",
+      "dependency-injector",
+      "gensim",
+      "gevent",
+      "grapheme",
+      "levenshtein",
+      "lxml",
+      "marisa-trie",
+      "pydevd",
+      "pyjson5",
+      "pysam"
+    ]
+  },
+  {
+    "group": "generated_cython",
+    "usage_form": "emitted_c_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_cython",
+    "usage_form": "forwarding_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_cython",
+    "usage_form": "llvm_api_call_emitter",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_cython",
+    "usage_form": "macro_dispatch_actual_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_cython",
+    "usage_form": "wrapper_call",
+    "packages": 15,
+    "files": 20,
+    "static_sites": 54,
+    "review_families": 13,
+    "package_names": [
+      "aiohttp",
+      "asyncpg",
+      "cftime",
+      "debugpy",
+      "dependency-injector",
+      "gensim",
+      "gevent",
+      "grapheme",
+      "levenshtein",
+      "lxml",
+      "marisa-trie",
+      "pydevd",
+      "pyjson5",
+      "pysam",
+      "rapidfuzz"
+    ]
+  },
+  {
+    "group": "generated_other",
+    "usage_form": "any",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_other",
+    "usage_form": "c_template_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_other",
+    "usage_form": "direct_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_other",
+    "usage_form": "emitted_c_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_other",
+    "usage_form": "forwarding_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_other",
+    "usage_form": "llvm_api_call_emitter",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_other",
+    "usage_form": "macro_dispatch_actual_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "generated_other",
+    "usage_form": "wrapper_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "handwritten",
+    "usage_form": "any",
+    "packages": 19,
+    "files": 35,
+    "static_sites": 73,
+    "review_families": 36,
+    "package_names": [
+      "aiocsv",
+      "apsw",
+      "asyncpg",
+      "biopython",
+      "cffi",
+      "levenshtein",
+      "librt",
+      "mutf8",
+      "mypy",
+      "numba",
+      "numpy",
+      "pyahocorasick",
+      "pyjson5",
+      "pyqt5",
+      "pyqt6",
+      "rapidfuzz",
+      "regex",
+      "ujson",
+      "yarl"
+    ]
+  },
+  {
+    "group": "handwritten",
+    "usage_form": "c_template_api_call",
+    "packages": 1,
+    "files": 2,
+    "static_sites": 2,
+    "review_families": 2,
+    "package_names": [
+      "numpy"
+    ]
+  },
+  {
+    "group": "handwritten",
+    "usage_form": "direct_api_call",
+    "packages": 17,
+    "files": 27,
+    "static_sites": 44,
+    "review_families": 30,
+    "package_names": [
+      "aiocsv",
+      "apsw",
+      "asyncpg",
+      "biopython",
+      "cffi",
+      "levenshtein",
+      "librt",
+      "mutf8",
+      "mypy",
+      "numpy",
+      "pyjson5",
+      "pyqt5",
+      "pyqt6",
+      "rapidfuzz",
+      "regex",
+      "ujson",
+      "yarl"
+    ]
+  },
+  {
+    "group": "handwritten",
+    "usage_form": "emitted_c_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "handwritten",
+    "usage_form": "forwarding_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "handwritten",
+    "usage_form": "llvm_api_call_emitter",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "handwritten",
+    "usage_form": "macro_dispatch_actual_call",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "pyahocorasick"
+    ]
+  },
+  {
+    "group": "handwritten",
+    "usage_form": "wrapper_call",
+    "packages": 7,
+    "files": 11,
+    "static_sites": 26,
+    "review_families": 10,
+    "package_names": [
+      "cffi",
+      "librt",
+      "mypy",
+      "numba",
+      "numpy",
+      "rapidfuzz",
+      "regex"
+    ]
+  },
+  {
+    "group": "test",
+    "usage_form": "any",
+    "packages": 2,
+    "files": 2,
+    "static_sites": 3,
+    "review_families": 2,
+    "package_names": [
+      "apsw",
+      "pyahocorasick"
+    ]
+  },
+  {
+    "group": "test",
+    "usage_form": "c_template_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "test",
+    "usage_form": "direct_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "test",
+    "usage_form": "emitted_c_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "test",
+    "usage_form": "forwarding_api_call",
+    "packages": 2,
+    "files": 2,
+    "static_sites": 3,
+    "review_families": 2,
+    "package_names": [
+      "apsw",
+      "pyahocorasick"
+    ]
+  },
+  {
+    "group": "test",
+    "usage_form": "llvm_api_call_emitter",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "test",
+    "usage_form": "macro_dispatch_actual_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "test",
+    "usage_form": "wrapper_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "vendor_or_compatibility",
+    "usage_form": "any",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "srsly"
+    ]
+  },
+  {
+    "group": "vendor_or_compatibility",
+    "usage_form": "c_template_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "vendor_or_compatibility",
+    "usage_form": "direct_api_call",
+    "packages": 1,
+    "files": 1,
+    "static_sites": 1,
+    "review_families": 1,
+    "package_names": [
+      "srsly"
+    ]
+  },
+  {
+    "group": "vendor_or_compatibility",
+    "usage_form": "emitted_c_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "vendor_or_compatibility",
+    "usage_form": "forwarding_api_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "vendor_or_compatibility",
+    "usage_form": "llvm_api_call_emitter",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "vendor_or_compatibility",
+    "usage_form": "macro_dispatch_actual_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  },
+  {
+    "group": "vendor_or_compatibility",
+    "usage_form": "wrapper_call",
+    "packages": 0,
+    "files": 0,
+    "static_sites": 0,
+    "review_families": 0,
+    "package_names": []
+  }
+]

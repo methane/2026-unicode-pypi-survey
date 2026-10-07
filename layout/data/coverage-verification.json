@@ -1,0 +1,2358 @@
+{
+  "audit_scope": "Offline saved-source verification; no package execution, builds, installs, downloads or existing publication edits.",
+  "inputs": {
+    "layout-access-analysis/candidate-files.json": "627bc081a3f10a8c447773d150798da657b34cf33213b47a0ba2b3571f963759",
+    "layout-access-analysis/type-token-hits.jsonl": "a416d9f43432b8e3e62de1738448e5bd8d729240949a317589be660f24781901",
+    "read-access-analysis/recovered-files.jsonl": "34601fed65f2fe062f325b72189f479755216457edb261cbc020b633e18ea303",
+    "read-access-analysis/coverage4000.csv": "f1713a3a47ce7bf93547a087562369b951ba7dce5bfd71972725a11e5daf1e40",
+    "read-access-analysis/permalinks/combined-files.json": "5e966c3a510470fc7ab2c126f6e3afbcbceeae217133a3efdd2d1bea050ba7b4",
+    "read-access-analysis/recover_sources.py": "7721bc012dc98865bb75ee48db225a49f5e88b382d4675c9d239f403684897af",
+    "survey.py": "47298a4ccee26c253288299c93f2f6800e3cc727f850776c2c804667053568f5"
+  },
+  "snapshot": {
+    "snapshot_url": "https://raw.githubusercontent.com/hugovk/top-pypi-packages/e6b5b398c1fcc783f593031f99bc2c772d64c6ef/top-pypi-packages.json",
+    "commit": "e6b5b398c1fcc783f593031f99bc2c772d64c6ef",
+    "snapshot_last_update_utc": "2026-10-01 12:41:32",
+    "download_ranking_window": "2026-09-01 through 2026-09-30 (calendar month)",
+    "ranking_source": "ClickHouse",
+    "ranking_sha256": "a0458d45ec5c696a482b44f94cc0eb83f7d5f3167e53c066b2a66cbfffa98358",
+    "top4000_names_sha256": "d3710dafb8a01c8f1b413d6188d5b9ae3670069d1bd4cc3b4456d1e36a557199",
+    "freeze_time_utc": "2026-10-02T17:23:45.708767+00:00",
+    "selection": "Exact first 4000 rows in snapshot order; latest PyPI info.version at metadata fetch; one non-yanked sdist from that release; no historical fallback.",
+    "primary_symbols": [
+      "PyUnicode_New",
+      "PyUnicode_WRITE",
+      "PyUnicode_WriteChar",
+      "PyUnicode_CopyCharacters",
+      "PyUnicode_Fill"
+    ],
+    "read_symbols": [
+      "PyUnicode_DATA",
+      "PyUnicode_1BYTE_DATA",
+      "PyUnicode_2BYTE_DATA",
+      "PyUnicode_4BYTE_DATA",
+      "PyUnicode_KIND",
+      "PyUnicode_READ",
+      "PyUnicode_READ_CHAR"
+    ],
+    "writer_symbols": "_?PyUnicodeWriter_*",
+    "computed_ranking_sha256": "a0458d45ec5c696a482b44f94cc0eb83f7d5f3167e53c066b2a66cbfffa98358",
+    "computed_top4000_names_sha256": "d3710dafb8a01c8f1b413d6188d5b9ae3670069d1bd4cc3b4456d1e36a557199",
+    "exact_first4000_order_verified": true,
+    "outcome_order_matches_first4000": true,
+    "ranking_window_evidence": "Saved snapshot-provenance reports the September2026 calendar month; corrected commit metadata says Fix data for September. No new network verification."
+  },
+  "acquisition": {
+    "outcomes": 4000,
+    "statuses": {
+      "scanned": 3788,
+      "no_current_sdist": 211,
+      "metadata_unavailable": 1
+    },
+    "verified_selected_sdist_records": 3788,
+    "metadata_failures": [
+      {
+        "package": "aaaaaaaaa",
+        "error": "HTTP Error 404: Not Found"
+      }
+    ],
+    "no_current_sdist_packages": [
+      "psycopg-binary",
+      "playwright",
+      "flatbuffers",
+      "onnxruntime",
+      "torch",
+      "redshift-connector",
+      "triton",
+      "cuda-bindings",
+      "cuda-pathfinder",
+      "events",
+      "nvidia-nccl-cu13",
+      "nvidia-nccl-cu12",
+      "nvidia-cudnn-cu13",
+      "nvidia-nvjitlink",
+      "cuda-toolkit",
+      "nvidia-cublas",
+      "nvidia-cusparselt-cu13",
+      "nvidia-nvshmem-cu13",
+      "nvidia-cuda-nvrtc",
+      "nvidia-cufft",
+      "nvidia-cusolver",
+      "nvidia-cusparse",
+      "nvidia-cuda-runtime",
+      "nvidia-cuda-cupti",
+      "nvidia-curand",
+      "nvidia-cufile",
+      "nvidia-nvtx",
+      "tensorboard",
+      "ua-parser-builtins",
+      "torchvision",
+      "tree-sitter-languages",
+      "nvidia-cudnn-cu12",
+      "nvidia-cublas-cu12",
+      "nvidia-cuda-nvrtc-cu12",
+      "nvidia-cusparse-cu12",
+      "nvidia-cusolver-cu12",
+      "nvidia-cufft-cu12",
+      "nvidia-cuda-runtime-cu12",
+      "nvidia-nvjitlink-cu12",
+      "nvidia-curand-cu12",
+      "nvidia-cuda-cupti-cu12",
+      "pywin32",
+      "ray",
+      "nvidia-nvtx-cu12",
+      "faiss-cpu",
+      "tensorboard-data-server",
+      "opensearch-protobufs",
+      "tensorflow",
+      "ctranslate2",
+      "nvidia-cusparselt-cu12",
+      "sseclient-py",
+      "cronsim",
+      "faster-whisper",
+      "tritonclient",
+      "jaxlib",
+      "nvidia-cufile-cu12",
+      "aliyun-semantic-conventions",
+      "lancedb",
+      "c7n-org",
+      "dotenv",
+      "bazel-runfiles",
+      "google-generativeai",
+      "tensorflow-estimator",
+      "pulumi",
+      "databricks-connect",
+      "ortools",
+      "pymupdf-layout",
+      "torchaudio",
+      "sqlite-vec",
+      "databricks-agents",
+      "tree-sitter-php",
+      "inputimeout",
+      "mitmproxy",
+      "teradatasql",
+      "nvidia-nvshmem-cu12",
+      "magicattr",
+      "cuda-python",
+      "mistral-vibe",
+      "rdkit",
+      "aliyun-python-sdk-core",
+      "nvidia-cutlass-dsl-libs-base",
+      "tensorflow-serving-api",
+      "tensorflow-text",
+      "openlineage-python",
+      "cuda-core",
+      "nvidia-cutlass-dsl",
+      "rapidocr",
+      "patchright",
+      "bitsandbytes",
+      "pylance",
+      "tensorflow-io-gcs-filesystem",
+      "pysbd",
+      "livekit-blingfire",
+      "nvidia-cudnn-frontend",
+      "chdb",
+      "vtk",
+      "torchcodec",
+      "pyside6-essentials",
+      "pyzbar",
+      "alibabacloud-oss-v2",
+      "shiboken6",
+      "tox-uv",
+      "openlineage-integration-common",
+      "tilelang",
+      "pyside6-addons",
+      "sglang",
+      "lingua-language-detector",
+      "pypandoc-binary",
+      "mssql-python",
+      "pyside6",
+      "nvidia-cuda-cccl",
+      "nvidia-cutlass-dsl-libs-cu13",
+      "livekit-local-inference",
+      "cuda-tile",
+      "nvidia-cutlass-dsl-libs-cu12",
+      "rapidocr-onnxruntime",
+      "azure-cognitiveservices-speech",
+      "nvidia-nvvm",
+      "nvidia-cuda-nvcc",
+      "flake8-pyproject",
+      "tbb",
+      "hdbcli",
+      "nvidia-cuda-crt",
+      "nvidia-cutlass-dsl-libs-core",
+      "comfy-kitchen",
+      "tokenspeed-triton",
+      "tcmlib",
+      "torchao",
+      "tokenspeed-mla",
+      "onnxruntime-gpu",
+      "kornia-rs",
+      "mssql-python-odbc",
+      "mediapipe",
+      "easyocr",
+      "nvidia-cuda-nvdisasm",
+      "pyqt5-qt5",
+      "docusign-esign",
+      "retry2",
+      "dbl-tempo",
+      "comfy-aimdo",
+      "chdb-core",
+      "livekit-plugins-noise-cancellation",
+      "pyvmomi",
+      "connectorx",
+      "ddapm-test-agent",
+      "jaro-winkler",
+      "yggdrasil-engine",
+      "teradatasqlalchemy",
+      "ytsaurus-client",
+      "databricks-vectorsearch",
+      "pyqt6-qt6",
+      "cadquery-ocp",
+      "daft",
+      "pyvis",
+      "tensorboard-plugin-wit",
+      "onnxconverter-common",
+      "flashinfer-cubin",
+      "loongsuite-util-genai",
+      "cadquery-ocp-proxy",
+      "tensordict",
+      "saxonche",
+      "openai-codex-cli-bin",
+      "databento-dbn",
+      "array-record",
+      "rerun-sdk",
+      "nvidia-cublas-cu11",
+      "sherpa-onnx-core",
+      "nlopt",
+      "c7n",
+      "cupy-cuda12x",
+      "nvidia-cudnn-cu11",
+      "timezonefinder-data",
+      "databricks-feature-engineering",
+      "botframework-connector",
+      "botbuilder-schema",
+      "embreex",
+      "databricks-ai-search",
+      "nvidia-cuda-nvcc-cu12",
+      "botbuilder-core",
+      "botframework-streaming",
+      "pybase62",
+      "decord",
+      "open3d",
+      "timeago",
+      "cowsay",
+      "torchdata",
+      "nvidia-cuda-runtime-cu11",
+      "nccl4py",
+      "py-asciimath",
+      "cmeel-assimp",
+      "synapseml",
+      "nvidia-cuda-nvrtc-cu11",
+      "azureml-mlflow",
+      "semantic-link-sempy",
+      "quantlib",
+      "trampoline",
+      "github-copilot-sdk",
+      "sagemaker-schema-inference-artifacts",
+      "tensorflow-cpu",
+      "tensorflow-hub",
+      "wheel-stub",
+      "libusb-package",
+      "codemagic-cli-tools",
+      "mlx",
+      "nvidia-cuda-tileiras",
+      "warp-lang",
+      "simpleitk",
+      "fno",
+      "junit2html",
+      "espeakng-loader",
+      "perplexityai"
+    ],
+    "old_original_scan_statuses": {
+      "scanned": 3787,
+      "no_current_sdist": 211,
+      "metadata_unavailable": 1,
+      "partial_scan": 1
+    },
+    "sdist_size_bytes_total": 5392882341
+  },
+  "retained_sources": {
+    "logical_source_member_records": 131701,
+    "packages_with_retained_sources": 583,
+    "logical_source_member_bytes": 2693826682,
+    "unique_physical_evidence_paths": 128609,
+    "physical_evidence_files_read_and_rehashed": 128609,
+    "physical_evidence_bytes": 2661565809,
+    "regular_archive_members": 1095069,
+    "nonignored_members_read_for_text_inspection": 930709,
+    "regular_members_excluded_before_text_inspection": 164360,
+    "catalog_and_CSV_reconciled": true,
+    "corpus_file_hash_errors": 0
+  },
+  "archive_processing": {
+    "recovery_skipped_regular_members": [],
+    "original_member_omissions": [
+      {
+        "package": "pyspark",
+        "version": "4.2.0",
+        "path": "pyspark-4.2.0/deps/jars/rocksdbjni-9.8.4.jar",
+        "bytes": 71683718,
+        "reason": "member_size_limit",
+        "coverage_kind": "non_source_binary_dependency"
+      }
+    ],
+    "links_not_followed": 244,
+    "link_packages": 43,
+    "link_kinds": {
+      "symlink": 244
+    },
+    "link_targets_matching_retained_regular_source": 2,
+    "link_inventory": [
+      {
+        "package": "referencing",
+        "path": "referencing-0.37.0/CHANGELOG.rst",
+        "target": "docs/changes.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "referencing-0.37.0/docs/changes.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pyparsing",
+        "path": "pyparsing-3.3.3/docs/CONTRIBUTING.md",
+        "target": "../CONTRIBUTING.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pyparsing-3.3.3/CONTRIBUTING.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "beautifulsoup4",
+        "path": "beautifulsoup4-4.15.0/NEWS.txt",
+        "target": "CHANGELOG",
+        "kind": "symlink",
+        "lexically_normalized_target": "beautifulsoup4-4.15.0/CHANGELOG",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "docutils",
+        "path": "docutils-0.23/test/functional/input/data/html4css1.css",
+        "target": "../../../../docutils/writers/html4css1/html4css1.css",
+        "kind": "symlink",
+        "lexically_normalized_target": "docutils-0.23/docutils/writers/html4css1/html4css1.css",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "docutils",
+        "path": "docutils-0.23/test/functional/input/data/math.css",
+        "target": "../../../../docutils/writers/html5_polyglot/math.css",
+        "kind": "symlink",
+        "lexically_normalized_target": "docutils-0.23/docutils/writers/html5_polyglot/math.css",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "docutils",
+        "path": "docutils-0.23/test/functional/input/data/minimal.css",
+        "target": "../../../../docutils/writers/html5_polyglot/minimal.css",
+        "kind": "symlink",
+        "lexically_normalized_target": "docutils-0.23/docutils/writers/html5_polyglot/minimal.css",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "docutils",
+        "path": "docutils-0.23/test/functional/input/data/plain.css",
+        "target": "../../../../docutils/writers/html5_polyglot/plain.css",
+        "kind": "symlink",
+        "lexically_normalized_target": "docutils-0.23/docutils/writers/html5_polyglot/plain.css",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "docutils",
+        "path": "docutils-0.23/test/functional/input/data/responsive.css",
+        "target": "../../../../docutils/writers/html5_polyglot/responsive.css",
+        "kind": "symlink",
+        "lexically_normalized_target": "docutils-0.23/docutils/writers/html5_polyglot/responsive.css",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "docutils",
+        "path": "docutils-0.23/test/functional/input/data/tuftig.css",
+        "target": "../../../../docutils/writers/html5_polyglot/tuftig.css",
+        "kind": "symlink",
+        "lexically_normalized_target": "docutils-0.23/docutils/writers/html5_polyglot/tuftig.css",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "aiofile",
+        "path": "aiofile-3.12.3/LICENCE",
+        "target": "LICENCE.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "aiofile-3.12.3/LICENCE.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "fastmcp",
+        "path": "fastmcp-4.0.10/AGENTS.md",
+        "target": "CLAUDE.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "fastmcp-4.0.10/CLAUDE.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "fastmcp",
+        "path": "fastmcp-4.0.10/.github/copilot-instructions.md",
+        "target": "../AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "fastmcp-4.0.10/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/authors.rst",
+        "target": "../deepdiff/docstrings/authors.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/authors.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/basics.rst",
+        "target": "../deepdiff/docstrings/basics.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/basics.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/changelog.rst",
+        "target": "../deepdiff/docstrings/changelog.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/changelog.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/colored_view.rst",
+        "target": "../deepdiff/docstrings/colored_view.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/colored_view.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/commandline.rst",
+        "target": "../deepdiff/docstrings/commandline.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/commandline.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/custom.rst",
+        "target": "../deepdiff/docstrings/custom.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/custom.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/deep_distance.rst",
+        "target": "../deepdiff/docstrings/deep_distance.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/deep_distance.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/deephash.rst",
+        "target": "../deepdiff/docstrings/deephash.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/deephash.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/deephash_doc.rst",
+        "target": "../deepdiff/docstrings/deephash_doc.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/deephash_doc.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/delta.rst",
+        "target": "../deepdiff/docstrings/delta.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/delta.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/diff.rst",
+        "target": "../deepdiff/docstrings/diff.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/diff.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/diff_doc.rst",
+        "target": "../deepdiff/docstrings/diff_doc.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/diff_doc.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/dsearch.rst",
+        "target": "../deepdiff/docstrings/dsearch.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/dsearch.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/exclude_paths.rst",
+        "target": "../deepdiff/docstrings/exclude_paths.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/exclude_paths.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/extract.rst",
+        "target": "../deepdiff/docstrings/extract.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/extract.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/faq.rst",
+        "target": "../deepdiff/docstrings/faq.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/faq.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/ignore_order.rst",
+        "target": "../deepdiff/docstrings/ignore_order.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/ignore_order.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/ignore_types_or_values.rst",
+        "target": "../deepdiff/docstrings/ignore_types_or_values.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/ignore_types_or_values.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/index.rst",
+        "target": "../deepdiff/docstrings/index.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/index.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/numbers.rst",
+        "target": "../deepdiff/docstrings/numbers.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/numbers.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/optimizations.rst",
+        "target": "../deepdiff/docstrings/optimizations.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/optimizations.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/other.rst",
+        "target": "../deepdiff/docstrings/other.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/other.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/search_doc.rst",
+        "target": "../deepdiff/docstrings/search_doc.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/search_doc.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/serialization.rst",
+        "target": "../deepdiff/docstrings/serialization.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/serialization.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/stats.rst",
+        "target": "../deepdiff/docstrings/stats.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/stats.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/support.rst",
+        "target": "../deepdiff/docstrings/support.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/support.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/troubleshoot.rst",
+        "target": "../deepdiff/docstrings/troubleshoot.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/troubleshoot.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "deepdiff",
+        "path": "deepdiff-9.1.0/docs/view.rst",
+        "target": "../deepdiff/docstrings/view.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "deepdiff-9.1.0/deepdiff/docstrings/view.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pydantic-ai-slim",
+        "path": "pydantic_ai_slim-2.53.0/pydantic_ai/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pydantic_ai_slim-2.53.0/pydantic_ai/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pydantic-ai-slim",
+        "path": "pydantic_ai_slim-2.53.0/pydantic_ai/models/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pydantic_ai_slim-2.53.0/pydantic_ai/models/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pydantic-ai-slim",
+        "path": "pydantic_ai_slim-2.53.0/pydantic_ai/native_tools/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pydantic_ai_slim-2.53.0/pydantic_ai/native_tools/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pydantic-ai-slim",
+        "path": "pydantic_ai_slim-2.53.0/pydantic_ai/realtime/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pydantic_ai_slim-2.53.0/pydantic_ai/realtime/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pydantic-ai-slim",
+        "path": "pydantic_ai_slim-2.53.0/pydantic_ai/ui/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pydantic_ai_slim-2.53.0/pydantic_ai/ui/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "griffe",
+        "path": "griffe-2.3.0/docs/logo.svg",
+        "target": "../logo.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "griffe-2.3.0/logo.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "griffe",
+        "path": "griffe-2.3.0/scripts/make",
+        "target": "make.py",
+        "kind": "symlink",
+        "lexically_normalized_target": "griffe-2.3.0/scripts/make.py",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "wandb",
+        "path": "wandb-0.30.0/core/LICENSE",
+        "target": "../LICENSE",
+        "kind": "symlink",
+        "lexically_normalized_target": "wandb-0.30.0/LICENSE",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "h3",
+        "path": "h3-4.5.0/src/h3/api/basic_str/__init__.py",
+        "target": "../basic_int/__init__.py",
+        "kind": "symlink",
+        "lexically_normalized_target": "h3-4.5.0/src/h3/api/basic_int/__init__.py",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "h3",
+        "path": "h3-4.5.0/src/h3/api/memview_int/__init__.py",
+        "target": "../basic_int/__init__.py",
+        "kind": "symlink",
+        "lexically_normalized_target": "h3-4.5.0/src/h3/api/basic_int/__init__.py",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "h3",
+        "path": "h3-4.5.0/src/h3/api/numpy_int/__init__.py",
+        "target": "../basic_int/__init__.py",
+        "kind": "symlink",
+        "lexically_normalized_target": "h3-4.5.0/src/h3/api/basic_int/__init__.py",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "openai-agents",
+        "path": "openai_agents-0.23.1/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "openai_agents-0.23.1/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "patchelf",
+        "path": "patchelf-0.19.1.0/COPYING",
+        "target": "src/patchelf-upstream/COPYING",
+        "kind": "symlink",
+        "lexically_normalized_target": "patchelf-0.19.1.0/src/patchelf-upstream/COPYING",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pyinstaller",
+        "path": "pyinstaller-6.22.3/news/README.txt",
+        "target": "../doc/development/changelog-entries.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "pyinstaller-6.22.3/doc/development/changelog-entries.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pyinstaller",
+        "path": "pyinstaller-6.22.3/tests/functional/data/appimage/AppIcon.svg",
+        "target": "../../../../icons/icon-windowed.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "pyinstaller-6.22.3/icons/icon-windowed.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pyinstaller",
+        "path": "pyinstaller-6.22.3/tests/functional/data/appimage/DirIcon.png",
+        "target": "../splash/image.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "pyinstaller-6.22.3/tests/functional/data/splash/image.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "wtforms",
+        "path": "wtforms-3.2.2/.hgignore",
+        "target": ".dotfiles/mercurial/.hgignore",
+        "kind": "symlink",
+        "lexically_normalized_target": "wtforms-3.2.2/.dotfiles/mercurial/.hgignore",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pydocket",
+        "path": "pydocket-0.26.0/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pydocket-0.26.0/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pydocket",
+        "path": "pydocket-0.26.0/tests/fundamentals/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pydocket-0.26.0/tests/fundamentals/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "soxr",
+        "path": "soxr-1.1.0/libsoxr/inst-check-soxr-lsr",
+        "target": "inst-check-soxr",
+        "kind": "symlink",
+        "lexically_normalized_target": "soxr-1.1.0/libsoxr/inst-check-soxr",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "flask-wtf",
+        "path": "flask_wtf-1.3.0/.hgignore",
+        "target": ".dotfiles/mercurial/.hgignore",
+        "kind": "symlink",
+        "lexically_normalized_target": "flask_wtf-1.3.0/.dotfiles/mercurial/.hgignore",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "blessed",
+        "path": "blessed-1.50.0/README.rst",
+        "target": "docs/intro.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "blessed-1.50.0/docs/intro.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/AI_POLICY.md",
+        "target": ".ai/AI_POLICY.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/AI_POLICY.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/CLAUDE.md",
+        "target": ".ai/AI_GUIDELINES.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/AI_GUIDELINES.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/OVERVIEW.md",
+        "target": ".ai/OVERVIEW.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/OVERVIEW.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/.gemini/GEMINI.md",
+        "target": "../.ai/AI_GUIDELINES.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/AI_GUIDELINES.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/.proto/AI_POLICY.md",
+        "target": ".ai/AI_POLICY.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.proto/.ai/AI_POLICY.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/.proto/CLAUDE.md",
+        "target": ".ai/AI_GUIDELINES.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.proto/.ai/AI_GUIDELINES.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/.proto/.gemini/GEMINI.md",
+        "target": "../.ai/AI_GUIDELINES.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.proto/.ai/AI_GUIDELINES.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/docs/OVERVIEW.md",
+        "target": "../OVERVIEW.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/OVERVIEW.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/docs/ai/AI_ACKNOWLEDGEMENT.md",
+        "target": "../../.ai/AI_ACKNOWLEDGEMENT.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/AI_ACKNOWLEDGEMENT.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/docs/ai/AI_AUDIT_FILE.md",
+        "target": "../../.ai/audit/AI_AUDIT_FILE.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/audit/AI_AUDIT_FILE.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/docs/ai/AI_AUDIT_PROCESS.md",
+        "target": "../../.ai/audit/AI_AUDIT_PROCESS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/audit/AI_AUDIT_PROCESS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/docs/ai/AI_AUDIT_PROCESS_REVIEW.md",
+        "target": "../../.ai/audit/AI_AUDIT_PROCESS_REVIEW.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/audit/AI_AUDIT_PROCESS_REVIEW.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/docs/ai/AI_GUIDELINES.md",
+        "target": "../../.ai/AI_GUIDELINES.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/AI_GUIDELINES.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "autobahn",
+        "path": "autobahn-26.7.1/docs/ai/AI_POLICY.md",
+        "target": "../../.ai/AI_POLICY.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "autobahn-26.7.1/.ai/AI_POLICY.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/AI_POLICY.md",
+        "target": ".ai/AI_POLICY.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/AI_POLICY.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/CLAUDE.md",
+        "target": ".ai/AI_GUIDELINES.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/AI_GUIDELINES.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/OVERVIEW.md",
+        "target": ".ai/OVERVIEW.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/OVERVIEW.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/.gemini/GEMINI.md",
+        "target": "../.ai/AI_GUIDELINES.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/AI_GUIDELINES.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/docs/OVERVIEW.md",
+        "target": "../OVERVIEW.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/OVERVIEW.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/docs/ai/AI_ACKNOWLEDGEMENT.md",
+        "target": "../../.ai/AI_ACKNOWLEDGEMENT.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/AI_ACKNOWLEDGEMENT.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/docs/ai/AI_AUDIT_FILE.md",
+        "target": "../../.ai/audit/AI_AUDIT_FILE.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/audit/AI_AUDIT_FILE.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/docs/ai/AI_AUDIT_PROCESS.md",
+        "target": "../../.ai/audit/AI_AUDIT_PROCESS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/audit/AI_AUDIT_PROCESS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/docs/ai/AI_AUDIT_PROCESS_REVIEW.md",
+        "target": "../../.ai/audit/AI_AUDIT_PROCESS_REVIEW.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/audit/AI_AUDIT_PROCESS_REVIEW.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/docs/ai/AI_GUIDELINES.md",
+        "target": "../../.ai/AI_GUIDELINES.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/AI_GUIDELINES.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "txaio",
+        "path": "txaio-26.6.1/docs/ai/AI_POLICY.md",
+        "target": "../../.ai/AI_POLICY.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "txaio-26.6.1/.ai/AI_POLICY.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/ambiguous_resolution_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/config_linter_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/cyclic_join_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/data_warehouse_validation_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/extended_date_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/join_types_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/multi_hop_join_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/name_edge_case_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/non_sm_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/partitioned_multi_hop_join_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/scd_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/simple_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "metricflow",
+        "path": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/simple_multi_hop_join_manifest/project_configuration.yaml",
+        "target": "../shared/project_configuration.yaml",
+        "kind": "symlink",
+        "lexically_normalized_target": "metricflow-0.213.0/metricflow_semantics/test_helpers/semantic_manifest_yamls/shared/project_configuration.yaml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "mkdocstrings-python",
+        "path": "mkdocstrings_python-2.0.9/scripts/make",
+        "target": "make.py",
+        "kind": "symlink",
+        "lexically_normalized_target": "mkdocstrings_python-2.0.9/scripts/make.py",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "mkdocstrings",
+        "path": "mkdocstrings-1.0.6/scripts/make",
+        "target": "make.py",
+        "kind": "symlink",
+        "lexically_normalized_target": "mkdocstrings-1.0.6/scripts/make.py",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "mkdocs-autorefs",
+        "path": "mkdocs_autorefs-1.4.4/scripts/make",
+        "target": "make.py",
+        "kind": "symlink",
+        "lexically_normalized_target": "mkdocs_autorefs-1.4.4/scripts/make.py",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "libtmux",
+        "path": "libtmux-0.62.0/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "libtmux-0.62.0/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "libtmux",
+        "path": "libtmux-0.62.0/docs/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "libtmux-0.62.0/docs/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "tinytag",
+        "path": "tinytag-2.3.2/LICENSES/MIT.txt",
+        "target": "../LICENSE",
+        "kind": "symlink",
+        "lexically_normalized_target": "tinytag-2.3.2/LICENSE",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nox",
+        "path": "nox-2026.8.17/docs/CHANGELOG.md",
+        "target": "../CHANGELOG.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "nox-2026.8.17/CHANGELOG.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nox",
+        "path": "nox-2026.8.17/docs/CONTRIBUTING.md",
+        "target": "../CONTRIBUTING.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "nox-2026.8.17/CONTRIBUTING.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nox",
+        "path": "nox-2026.8.17/tests/resources/sym_dir/noxfile.py",
+        "target": "../orig_dir/noxfile.py",
+        "kind": "symlink",
+        "lexically_normalized_target": "nox-2026.8.17/tests/resources/orig_dir/noxfile.py",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pdm-backend",
+        "path": "pdm_backend-2.5.0/tests/fixtures/projects/demo-no-version/anothername.toml",
+        "target": "pyproject.toml",
+        "kind": "symlink",
+        "lexically_normalized_target": "pdm_backend-2.5.0/tests/fixtures/projects/demo-no-version/pyproject.toml",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "gdown",
+        "path": "gdown-6.4.1/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "gdown-6.4.1/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "schemathesis",
+        "path": "schemathesis-4.29.0/docs/migration.md",
+        "target": "../MIGRATION.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "schemathesis-4.29.0/MIGRATION.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "funcsigs",
+        "path": "funcsigs-1.0.2/docs/index.rst",
+        "target": "../README.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "funcsigs-1.0.2/README.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/git-hooks/post-merge",
+        "target": "post-checkout",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/git-hooks/post-checkout",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/nbclassic/static/components/jquery-typeahead/node_modules/.bin/lz-string",
+        "target": "../../../lz-string/bin/bin.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/nbclassic/static/components/lz-string/bin/bin.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/nbclassic/static/components/react/node_modules/.bin/loose-envify",
+        "target": "../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/nbclassic/static/components/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/nbclassic/static/components/react-dom/node_modules/.bin/loose-envify",
+        "target": "../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/nbclassic/static/components/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/acorn",
+        "target": "../acorn/bin/acorn",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/acorn/bin/acorn",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/browserslist",
+        "target": "../browserslist/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/browserslist/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/envinfo",
+        "target": "../envinfo/dist/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/envinfo/dist/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/errno",
+        "target": "../errno/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/errno/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/flat",
+        "target": "../flat/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/flat/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/image-size",
+        "target": "../image-size/bin/image-size.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/image-size/bin/image-size.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/import-local-fixture",
+        "target": "../import-local/fixtures/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/import-local/fixtures/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/jsesc",
+        "target": "../jsesc/bin/jsesc",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/jsesc/bin/jsesc",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/json5",
+        "target": "../json5/lib/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/json5/lib/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/lessc",
+        "target": "../less/bin/lessc",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/less/bin/lessc",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/loose-envify",
+        "target": "../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/lz-string",
+        "target": "../lz-string/bin/bin.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/lz-string/bin/bin.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/marked",
+        "target": "../marked/bin/marked.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/marked/bin/marked.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/mime",
+        "target": "../mime/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/mime/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/nanoid",
+        "target": "../nanoid/bin/nanoid.cjs",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/nanoid/bin/nanoid.cjs",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/needle",
+        "target": "../needle/bin/needle",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/needle/bin/needle",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/node-which",
+        "target": "../which/bin/node-which",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/which/bin/node-which",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/onchange",
+        "target": "../onchange/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/onchange/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/parser",
+        "target": "../@babel/parser/bin/babel-parser.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@babel/parser/bin/babel-parser.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/po2json",
+        "target": "../po2json/bin/po2json",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/po2json/bin/po2json",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/r.js",
+        "target": "../requirejs/bin/r.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/requirejs/bin/r.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/r_js",
+        "target": "../requirejs/bin/r.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/requirejs/bin/r.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/regjsparser",
+        "target": "../regjsparser/bin/parser",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/regjsparser/bin/parser",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/resolve",
+        "target": "../resolve/bin/resolve",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/resolve/bin/resolve",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/semver",
+        "target": "../make-dir/node_modules/semver/bin/semver",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/make-dir/node_modules/semver/bin/semver",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/terser",
+        "target": "../terser/bin/terser",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/terser/bin/terser",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/tree-kill",
+        "target": "../tree-kill/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/tree-kill/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/ua-parser-js",
+        "target": "../ua-parser-js/script/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/ua-parser-js/script/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/update-browserslist-db",
+        "target": "../update-browserslist-db/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/update-browserslist-db/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/upgrade-blueprint-2.0.0-rename",
+        "target": "../@jupyterlab/apputils/node_modules/@blueprintjs/core/scripts/upgrade-blueprint-2.0.0-rename.sh",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@blueprintjs/core/scripts/upgrade-blueprint-2.0.0-rename.sh",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/upgrade-blueprint-3.0.0-rename",
+        "target": "../@jupyterlab/apputils/node_modules/@blueprintjs/core/scripts/upgrade-blueprint-3.0.0-rename.sh",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@blueprintjs/core/scripts/upgrade-blueprint-3.0.0-rename.sh",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/webpack",
+        "target": "../webpack/bin/webpack.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack/bin/webpack.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/.bin/webpack-cli",
+        "target": "../webpack-cli/bin/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack-cli/bin/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/core/node_modules/.bin/json5",
+        "target": "../../../../json5/lib/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/json5/lib/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/core/node_modules/.bin/parser",
+        "target": "../../../parser/bin/babel-parser.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@babel/parser/bin/babel-parser.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/core/node_modules/.bin/semver",
+        "target": "../../../../semver/bin/semver.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/semver/bin/semver.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/generator/node_modules/.bin/jsesc",
+        "target": "../../../../jsesc/bin/jsesc",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/jsesc/bin/jsesc",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/generator/node_modules/.bin/parser",
+        "target": "../../../parser/bin/babel-parser.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@babel/parser/bin/babel-parser.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/helper-compilation-targets/node_modules/.bin/browserslist",
+        "target": "../../../../browserslist/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/browserslist/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/helper-compilation-targets/node_modules/.bin/semver",
+        "target": "../../../../semver/bin/semver.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/semver/bin/semver.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/helper-create-class-features-plugin/node_modules/.bin/semver",
+        "target": "../../../../semver/bin/semver.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/semver/bin/semver.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/helper-create-regexp-features-plugin/node_modules/.bin/semver",
+        "target": "../../../../semver/bin/semver.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/semver/bin/semver.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/helper-define-polyfill-provider/node_modules/.bin/resolve",
+        "target": "../../../../resolve/bin/resolve",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/resolve/bin/resolve",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/preset-env/node_modules/.bin/semver",
+        "target": "../../../../semver/bin/semver.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/semver/bin/semver.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/template/node_modules/.bin/parser",
+        "target": "../../../parser/bin/babel-parser.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@babel/parser/bin/babel-parser.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@babel/traverse/node_modules/.bin/parser",
+        "target": "../../../parser/bin/babel-parser.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@babel/parser/bin/babel-parser.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@blueprintjs/select/node_modules/.bin/upgrade-blueprint-2.0.0-rename",
+        "target": "../../../core/scripts/upgrade-blueprint-2.0.0-rename.sh",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@blueprintjs/core/scripts/upgrade-blueprint-2.0.0-rename.sh",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@blueprintjs/select/node_modules/.bin/upgrade-blueprint-3.0.0-rename",
+        "target": "../../../core/scripts/upgrade-blueprint-3.0.0-rename.sh",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@blueprintjs/core/scripts/upgrade-blueprint-3.0.0-rename.sh",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@jupyterlab/ui-components/node_modules/.bin/upgrade-blueprint-2.0.0-rename",
+        "target": "../../../../@blueprintjs/core/scripts/upgrade-blueprint-2.0.0-rename.sh",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@blueprintjs/core/scripts/upgrade-blueprint-2.0.0-rename.sh",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@jupyterlab/ui-components/node_modules/.bin/upgrade-blueprint-3.0.0-rename",
+        "target": "../../../../@blueprintjs/core/scripts/upgrade-blueprint-3.0.0-rename.sh",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@blueprintjs/core/scripts/upgrade-blueprint-3.0.0-rename.sh",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/@rjsf/core/node_modules/.bin/nanoid",
+        "target": "../../../../../../../nanoid/bin/nanoid.cjs",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/nanoid/bin/nanoid.cjs",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/react/node_modules/.bin/loose-envify",
+        "target": "../../../../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/react-dom/node_modules/.bin/loose-envify",
+        "target": "../../../../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/apputils/node_modules/react-transition-group/node_modules/.bin/loose-envify",
+        "target": "../../../../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@jupyterlab/settingregistry/node_modules/.bin/json5",
+        "target": "../../../../json5/lib/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/json5/lib/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@webpack-cli/configtest/node_modules/.bin/webpack",
+        "target": "../../../../webpack/bin/webpack.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack/bin/webpack.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@webpack-cli/configtest/node_modules/.bin/webpack-cli",
+        "target": "../../../../webpack-cli/bin/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack-cli/bin/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@webpack-cli/info/node_modules/.bin/envinfo",
+        "target": "../../../../envinfo/dist/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/envinfo/dist/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@webpack-cli/info/node_modules/.bin/webpack-cli",
+        "target": "../../../../webpack-cli/bin/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack-cli/bin/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/@webpack-cli/serve/node_modules/.bin/webpack-cli",
+        "target": "../../../../webpack-cli/bin/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack-cli/bin/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/babel-loader/node_modules/.bin/webpack",
+        "target": "../../../webpack/bin/webpack.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack/bin/webpack.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/babel-loader/node_modules/make-dir/node_modules/.bin/semver",
+        "target": "../../../../../semver/bin/semver.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/semver/bin/semver.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/babel-plugin-polyfill-corejs2/node_modules/.bin/semver",
+        "target": "../../../semver/bin/semver.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/semver/bin/semver.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/browserslist/node_modules/.bin/update-browserslist-db",
+        "target": "../../../update-browserslist-db/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/update-browserslist-db/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/copy-webpack-plugin/node_modules/.bin/webpack",
+        "target": "../../../webpack/bin/webpack.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack/bin/webpack.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/core-js-compat/node_modules/.bin/browserslist",
+        "target": "../../../browserslist/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/browserslist/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/cross-spawn/node_modules/.bin/node-which",
+        "target": "../../../which/bin/node-which",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/which/bin/node-which",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/fbjs/node_modules/.bin/loose-envify",
+        "target": "../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/fbjs/node_modules/.bin/ua-parser-js",
+        "target": "../../../ua-parser-js/script/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/ua-parser-js/script/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/find-cache-dir/node_modules/make-dir/node_modules/.bin/semver",
+        "target": "../../../../../semver/bin/semver.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/semver/bin/semver.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/less/node_modules/.bin/errno",
+        "target": "../../../errno/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/errno/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/less/node_modules/.bin/image-size",
+        "target": "../../../image-size/bin/image-size.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/image-size/bin/image-size.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/less/node_modules/.bin/mime",
+        "target": "../../../mime/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/mime/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/less/node_modules/.bin/needle",
+        "target": "../../../needle/bin/needle",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/needle/bin/needle",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/loader-utils/node_modules/.bin/json5",
+        "target": "../../../json5/lib/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/json5/lib/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/make-dir/node_modules/.bin/semver",
+        "target": "../semver/bin/semver",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/make-dir/node_modules/semver/bin/semver",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/onchange/node_modules/.bin/tree-kill",
+        "target": "../../../tree-kill/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/tree-kill/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/postcss/node_modules/.bin/nanoid",
+        "target": "../../../nanoid/bin/nanoid.cjs",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/nanoid/bin/nanoid.cjs",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/prop-types/node_modules/.bin/loose-envify",
+        "target": "../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/rechoir/node_modules/.bin/resolve",
+        "target": "../../../resolve/bin/resolve",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/resolve/bin/resolve",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/regexpu-core/node_modules/.bin/regjsparser",
+        "target": "../../../regjsparser/bin/parser",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/regjsparser/bin/parser",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/regjsparser/node_modules/.bin/jsesc",
+        "target": "../jsesc/bin/jsesc",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/regjsparser/node_modules/jsesc/bin/jsesc",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/scheduler/node_modules/.bin/loose-envify",
+        "target": "../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/terser/node_modules/.bin/acorn",
+        "target": "../../../acorn/bin/acorn",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/acorn/bin/acorn",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/terser-webpack-plugin/node_modules/.bin/terser",
+        "target": "../../../terser/bin/terser",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/terser/bin/terser",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/terser-webpack-plugin/node_modules/.bin/webpack",
+        "target": "../../../webpack/bin/webpack.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack/bin/webpack.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/update-browserslist-db/node_modules/.bin/browserslist",
+        "target": "../../../browserslist/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/browserslist/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/warning/node_modules/.bin/loose-envify",
+        "target": "../../../loose-envify/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/loose-envify/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/webpack/node_modules/.bin/acorn",
+        "target": "../../../acorn/bin/acorn",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/acorn/bin/acorn",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/webpack/node_modules/.bin/browserslist",
+        "target": "../../../browserslist/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/browserslist/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/webpack-cli/node_modules/.bin/import-local-fixture",
+        "target": "../../../import-local/fixtures/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/import-local/fixtures/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/webpack-cli/node_modules/.bin/webpack",
+        "target": "../../../webpack/bin/webpack.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/webpack/bin/webpack.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nbclassic",
+        "path": "nbclassic-1.3.3/node_modules/webpack-merge/node_modules/.bin/flat",
+        "target": "../../../flat/cli.js",
+        "kind": "symlink",
+        "lexically_normalized_target": "nbclassic-1.3.3/node_modules/flat/cli.js",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nibabel",
+        "path": "nibabel-5.4.2/doc/source/changelog.rst",
+        "target": "../../Changelog",
+        "kind": "symlink",
+        "lexically_normalized_target": "nibabel-5.4.2/Changelog",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "nibabel",
+        "path": "nibabel-5.4.2/doc/source/legal.rst",
+        "target": "../../COPYING",
+        "kind": "symlink",
+        "lexically_normalized_target": "nibabel-5.4.2/COPYING",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "coolprop",
+        "path": "coolprop-8.0.0/dev/state_capsule/State.pxd",
+        "target": "../../wrappers/Python/_nanobind/State.pxd",
+        "kind": "symlink",
+        "lexically_normalized_target": "coolprop-8.0.0/wrappers/Python/_nanobind/State.pxd",
+        "target_is_retained_regular_source": true
+      },
+      {
+        "package": "coolprop",
+        "path": "coolprop-8.0.0/dev/state_capsule/State.pyx",
+        "target": "../../wrappers/Python/_nanobind/State.pyx",
+        "kind": "symlink",
+        "lexically_normalized_target": "coolprop-8.0.0/wrappers/Python/_nanobind/State.pyx",
+        "target_is_retained_regular_source": true
+      },
+      {
+        "package": "python-statemachine",
+        "path": "python_statemachine-3.2.1/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "python_statemachine-3.2.1/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "inscriptis",
+        "path": "inscriptis-2.7.5/docs/README.rst",
+        "target": "../README.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "inscriptis-2.7.5/README.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "inscriptis",
+        "path": "inscriptis-2.7.5/docs/contributing.md",
+        "target": "../CONTRIBUTING.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "inscriptis-2.7.5/CONTRIBUTING.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "sklearn-compat",
+        "path": "sklearn_compat-0.1.6/docs/index.md",
+        "target": "../README.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "sklearn_compat-0.1.6/README.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "copier",
+        "path": "copier-9.18.2/docs/changelog.md",
+        "target": "../CHANGELOG.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "copier-9.18.2/CHANGELOG.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "copier",
+        "path": "copier-9.18.2/docs/contributing.md",
+        "target": "../CONTRIBUTING.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "copier-9.18.2/CONTRIBUTING.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "copier",
+        "path": "copier-9.18.2/docs/index.md",
+        "target": "../README.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "copier-9.18.2/README.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "copier",
+        "path": "copier-9.18.2/tests/demo/symlink.txt",
+        "target": "aaaa.txt",
+        "kind": "symlink",
+        "lexically_normalized_target": "copier-9.18.2/tests/demo/aaaa.txt",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/_static/image/logo-300px-white.png",
+        "target": "../../../docs-img/logo/logo-300px-white.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/logo/logo-300px-white.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/_static/image/logo-300px.png",
+        "target": "../../../docs-img/logo/logo-300px.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/logo/logo-300px.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/getting-started/cartoon-cartesian.png",
+        "target": "../../docs-img/diagrams/cartoon-cartesian.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/cartoon-cartesian.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/getting-started/cartoon-combinations.png",
+        "target": "../../docs-img/diagrams/cartoon-combinations.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/cartoon-combinations.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/getting-started/example-reduction-sum.svg",
+        "target": "../../docs-img/diagrams/example-reduction-sum.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/example-reduction-sum.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/awkward-1-0-layers.svg",
+        "target": "../../docs-img/diagrams/awkward-1-0-layers.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/awkward-1-0-layers.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/bikeroutes-scaling.svg",
+        "target": "../../docs-img/plots/bikeroutes-scaling.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/plots/bikeroutes-scaling.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/desire-path.jpg",
+        "target": "../../docs-img/photos/desire-path.jpg",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/photos/desire-path.jpg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/example-array.svg",
+        "target": "../../docs-img/diagrams/example-array.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/example-array.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/example-reduction-sum-only.svg",
+        "target": "../../docs-img/diagrams/example-reduction-sum-only.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/example-reduction-sum-only.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/example-reduction-sum.svg",
+        "target": "../../docs-img/diagrams/example-reduction-sum.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/example-reduction-sum.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/favicon.ico",
+        "target": "../../docs-img/logo/favicon.ico",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/logo/favicon.ico",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/github-issues-documentation.png",
+        "target": "../../docs-img/screenshots/github-issues-documentation.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/screenshots/github-issues-documentation.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/how-it-works.svg",
+        "target": "../../docs-img/diagrams/how-it-works.svg",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/how-it-works.svg",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/image/logo-300px.png",
+        "target": "../../docs-img/logo/logo-300px.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/logo/logo-300px.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/user-guide/cartoon-cartesian.png",
+        "target": "../../docs-img/diagrams/cartoon-cartesian.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/cartoon-cartesian.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "awkward",
+        "path": "awkward-2.14.0/docs/user-guide/cartoon-combinations.png",
+        "target": "../../docs-img/diagrams/cartoon-combinations.png",
+        "kind": "symlink",
+        "lexically_normalized_target": "awkward-2.14.0/docs-img/diagrams/cartoon-combinations.png",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "pydantic-ai-skills",
+        "path": "pydantic_ai_skills-2.0.0/CLAUDE.md",
+        "target": "AGENTS.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "pydantic_ai_skills-2.0.0/AGENTS.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "telnetlib3",
+        "path": "telnetlib3-5.0.1/docs/contributing.rst",
+        "target": "../CONTRIBUTING.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "telnetlib3-5.0.1/CONTRIBUTING.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "telnetlib3",
+        "path": "telnetlib3-5.0.1/docs/intro.rst",
+        "target": "../README.rst",
+        "kind": "symlink",
+        "lexically_normalized_target": "telnetlib3-5.0.1/README.rst",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "jinja-partials",
+        "path": "jinja_partials-0.3.2/AGENTS.md",
+        "target": "CLAUDE.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "jinja_partials-0.3.2/CLAUDE.md",
+        "target_is_retained_regular_source": false
+      },
+      {
+        "package": "jinja-partials",
+        "path": "jinja_partials-0.3.2/GEMINI.md",
+        "target": "CLAUDE.md",
+        "kind": "symlink",
+        "lexically_normalized_target": "jinja_partials-0.3.2/CLAUDE.md",
+        "target_is_retained_regular_source": false
+      }
+    ],
+    "safety_rules": "No extraction. Read safe regular archive members only; reject absolute/traversal/backslash member names; ignore nested archives/binary suffixes; do not follow links. Recovery size cap128MiB per eligible text member was not reached by any eligible member."
+  },
+  "named_type_scan": {
+    "symbols": [
+      "PyUnicodeObject",
+      "PyASCIIObject",
+      "PyCompactUnicodeObject"
+    ],
+    "retained_source_members_examined": 131701,
+    "candidate_files": 309,
+    "candidate_packages": 74,
+    "candidate_origins": {
+      "handwritten_candidate": 42,
+      "compatibility": 5,
+      "generated_cython": 218,
+      "vendor": 4,
+      "generator_runtime": 4,
+      "compatibility_binding": 2,
+      "generated_other": 26,
+      "vendor_cpython": 6,
+      "cpython_fork_backport": 2
+    },
+    "named_type_files_recomputed": 309,
+    "alias_only_candidate_files": [],
+    "raw_named_occurrences": {
+      "PyUnicodeObject": 228,
+      "PyASCIIObject": 3540,
+      "PyCompactUnicodeObject": 289
+    },
+    "code_named_occurrences": {
+      "PyUnicodeObject": 200,
+      "PyASCIIObject": 3477,
+      "PyCompactUnicodeObject": 283
+    },
+    "raw_hits": 4057,
+    "physical_LF_line_and_offset_checks": 4057,
+    "lexical_disposition_checks": 4057,
+    "splitlines_vs_physical_LF_difference_files": [
+      {
+        "package": "psycopg-c",
+        "path": "psycopg_c-3.3.6/psycopg_c/_psycopg.c",
+        "physical_LF_lines": 122442,
+        "python_splitlines_lines": 122445
+      }
+    ],
+    "token_boundary_rule": "ASCII identifier boundaries; UTF-8 decoded character offsets, physical LF line count. Token names are identifiers, not proof of instance-field access.",
+    "physical_LF_source_line_policy": "Compare raw UTF-8-decoded bytes split only at LF; preserve CR when present. Do not use Path.read_text universal-newline translation for character offsets or Python splitlines for GitHub line numbers.",
+    "CRLF_token_source_lines": 71
+  },
+  "saved_permalink_map": {
+    "files": 409,
+    "status_counts": {
+      "verified_exact_bytes": 227,
+      "no_verified_permalink": 173,
+      "verified_matching_line_blocks": 5,
+      "verified_lines_newline_only": 4
+    },
+    "verified_records_rechecked": 236,
+    "physical_LF_line_block_checks_passed": true,
+    "candidate_status_counts": {
+      "verified_exact_bytes": 79,
+      "not_in_saved_permalink_map": 64,
+      "no_verified_permalink": 157,
+      "verified_lines_newline_only": 4,
+      "verified_matching_line_blocks": 5
+    },
+    "identity_mapping_statuses": [
+      "verified_exact_bytes",
+      "verified_lines_newline_only"
+    ],
+    "partial_mapping_status": "verified_matching_line_blocks",
+    "range_algorithm": "Match package+archive member path+source SHA-256; validate1<=start<=end<=physical-LF source line count. For verified exact/newline-only identity maps, append #Lstart-Lend to the recorded40-hex commit blob URL. For partial maps, require the entire requested range within one exact matched source block, shift by github_start-source_start. Otherwise return null and retain frozen sdist URL/hash/member hash. Never infer a link from HEAD, tag name, package version alone, or another source hash."
+  },
+  "limitations_and_real_corpus_gaps": [
+    "211 latest selected package releases have no current sdist; aaaaaaaaa is HTTP404. Their source usage is unknown, not zero. No historical release fallback or wheel-only source inference.",
+    "The follow-up named-token scan covers all saved native files and Unicode-bearing eligible text, not every member of all sdists. Eligible members were read, then retained only for recognized native suffixes/templates or Unicode indicators; .py requires an indicator. Other text is not available for this offline follow-up.",
+    "Ignored suffixes include .rst/.html/.json/.js/.css, binaries and nested archives. A binary/text heuristic rejects eligible members whose first256 bytes contain controls outside the allowed set; UTF-16 or unconventional encoded source can therefore be outside retained coverage.",
+    "244 symlinks are not followed. Targets present as retained regular source are covered under their regular names; other target presence/content cannot be proven from the retained-only catalog. No archive-member expansion is performed now.",
+    "Type-name token absence cannot exclude aliased types defined elsewhere, token-pasting, generic PyObject/raw offsets, differently named replicated layouts, dynamically generated C, or native/wheel sources absent from the sdist.",
+    "Lexical code status is not semantic access: declarations/definitions, sizeof/offsetof, cast helpers, generated/compatibility copies, inactive preprocessor branches and macro bodies need contextual review. The mask is a static regex lexer, not a compiler/parser, so language edge cases remain possible.",
+    "The saved409-file permalink map covers previous reviewed sources only; candidates not in it have no offline verified upstream mapping. Cached-source equivalence is rechecked locally, not refreshed against current GitHub. Partial maps support only contained exact ranges."
+  ],
+  "errors": [],
+  "passed": true,
+  "reusable_helper": {
+    "path": "layout-access-analysis/source_link_support.py",
+    "sha256": "cc59875768246133159ffc3dcb204ab7d720811b65960d274cf90a99d421d3d6",
+    "snapshot_function": "verify_pinned_snapshot(snapshot_bytes,names_bytes,expected_snapshot_sha256,expected_names_sha256,count=4000)",
+    "source_link_function": "verified_permalink(record,start,end,source_bytes,remote_bytes)",
+    "negative_and_positive_mapping_checks_passed": 12,
+    "physical_LF_only": true,
+    "publications_modified": false
+  }
+}

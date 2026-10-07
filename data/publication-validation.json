@@ -1,0 +1,21 @@
+{
+  "files_excluding_generated_validation_manifest": 83,
+  "bytes_excluding_generated_validation_manifest": 16686636,
+  "markdown_pages": 47,
+  "fenced_code_blocks": 913,
+  "relative_links_checked": 736,
+  "read_functions": 1205,
+  "handwritten_B_cases": 272,
+  "handwritten_B_logical_sites": 551,
+  "reuse_other_packages": 52,
+  "reuse_statuses": {
+    "no": 13,
+    "yes": 28,
+    "possible": 11
+  },
+  "strong_partial_other_packages": 8,
+  "private_path_findings": [],
+  "link_errors": [],
+  "network_requests": 0,
+  "source_identity_checks": "Exact full-member hash and excerpt line checks were performed in the source review and public-case/reuse export; full corpus is not included here."
+}

@@ -1,0 +1,50 @@
+{
+  "target": "PyUnicode_FromKindAndData",
+  "followup": "same frozen top4000 retained-source corpus; offline static review",
+  "ranking": {
+    "snapshot_url": "https://raw.githubusercontent.com/hugovk/top-pypi-packages/e6b5b398c1fcc783f593031f99bc2c772d64c6ef/top-pypi-packages.json",
+    "commit": "e6b5b398c1fcc783f593031f99bc2c772d64c6ef",
+    "snapshot_last_update_utc": "2026-10-01 12:41:32",
+    "download_ranking_window": "2026-09-01 through 2026-09-30 (calendar month)",
+    "ranking_source": "ClickHouse",
+    "ranking_sha256": "a0458d45ec5c696a482b44f94cc0eb83f7d5f3167e53c066b2a66cbfffa98358",
+    "top4000_names_sha256": "d3710dafb8a01c8f1b413d6188d5b9ae3670069d1bd4cc3b4456d1e36a557199",
+    "freeze_time_utc": "2026-10-02T17:23:45.708767+00:00",
+    "selection": "Exact first 4000 rows in snapshot order; latest PyPI info.version at metadata fetch; one non-yanked sdist from that release; no historical fallback.",
+    "primary_symbols": [
+      "PyUnicode_New",
+      "PyUnicode_WRITE",
+      "PyUnicode_WriteChar",
+      "PyUnicode_CopyCharacters",
+      "PyUnicode_Fill"
+    ],
+    "read_symbols": [
+      "PyUnicode_DATA",
+      "PyUnicode_1BYTE_DATA",
+      "PyUnicode_2BYTE_DATA",
+      "PyUnicode_4BYTE_DATA",
+      "PyUnicode_KIND",
+      "PyUnicode_READ",
+      "PyUnicode_READ_CHAR"
+    ],
+    "writer_symbols": "_?PyUnicodeWriter_*",
+    "packages": 4000,
+    "source": "ClickHouse",
+    "last_update": "2026-10-01 12:41:32",
+    "verified_sha256": "a0458d45ec5c696a482b44f94cc0eb83f7d5f3167e53c066b2a66cbfffa98358",
+    "verified_names_sha256": "d3710dafb8a01c8f1b413d6188d5b9ae3670069d1bd4cc3b4456d1e36a557199",
+    "exact_first4000_order_verified": true
+  },
+  "outcomes": {
+    "scanned": 3788,
+    "no_current_sdist": 211,
+    "metadata_unavailable": 1
+  },
+  "concrete_constructor_sites": 85,
+  "routed_wrapper_sites": 80,
+  "executable_fault_forwarders": 3,
+  "source_execution": false,
+  "new_package_downloads": false,
+  "external_publication": false,
+  "semantic_documentation_context_checked": "2026-10-05; live official Qt/Python docs, separate from corpus and immutable source evidence"
+}

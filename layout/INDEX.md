@@ -1,0 +1,77 @@
+# Package evidence index
+
+Counts include conditional implementations; consult each origin/activation note.
+
+| Package | Version | Direct layout records | Non-direct context records |
+|---|---|---:|---:|
+| [aiohttp](cases/aiohttp.md) | 3.14.3 | 19 | 0 |
+| [aiokafka](cases/aiokafka.md) | 0.14.0 | 20 | 0 |
+| [asyncpg](cases/asyncpg.md) | 0.31.0 | 11 | 0 |
+| [av](cases/av.md) | 19.0.0 | 143 | 0 |
+| [bitarray](cases/bitarray.md) | 3.11.0 | 1 | 0 |
+| [cftime](cases/cftime.md) | 1.6.6 | 5 | 0 |
+| [clickhouse-driver](cases/clickhouse-driver.md) | 0.2.11 | 19 | 0 |
+| [cython](cases/cython.md) | 3.3.0 | 6 | 3 |
+| [cytoolz](cases/cytoolz.md) | 1.1.0 | 25 | 0 |
+| [ddtrace](cases/ddtrace.md) | 4.15.4 | 4 | 5 |
+| [debugpy](cases/debugpy.md) | 1.8.22 | 16 | 1 |
+| [dependency-injector](cases/dependency-injector.md) | 4.49.1 | 16 | 0 |
+| [duckdb](cases/duckdb.md) | 1.5.6 | 1 | 2 |
+| [editdistance](cases/editdistance.md) | 0.8.1 | 3 | 1 |
+| [fastavro](cases/fastavro.md) | 1.12.2 | 34 | 1 |
+| [fastparquet](cases/fastparquet.md) | 2026.9.0 | 8 | 0 |
+| [frozendict](cases/frozendict.md) | 2.4.7 | 98 | 5 |
+| [gensim](cases/gensim.md) | 4.4.0 | 32 | 10 |
+| [gevent](cases/gevent.md) | 26.9.0 | 18 | 0 |
+| [grapheme](cases/grapheme.md) | 0.6.0 | 9 | 3 |
+| [grpcio](cases/grpcio.md) | 1.84.0 | 6 | 0 |
+| [grpcio-tools](cases/grpcio-tools.md) | 1.84.0 | 6 | 0 |
+| [hdbscan](cases/hdbscan.md) | 0.8.44 | 30 | 0 |
+| [httptools](cases/httptools.md) | 0.8.0 | 10 | 0 |
+| [imagecodecs](cases/imagecodecs.md) | 2026.8.16 | 2 | 0 |
+| [jiter](cases/jiter.md) | 0.17.0 | 0 | 1 |
+| [jpype1](cases/jpype1.md) | 1.7.1 | 5 | 0 |
+| [levenshtein](cases/levenshtein.md) | 0.27.5 | 3 | 0 |
+| [librt](cases/librt.md) | 0.16.0 | 2 | 0 |
+| [line-profiler](cases/line-profiler.md) | 5.0.2 | 6 | 0 |
+| [lupa](cases/lupa.md) | 2.8 | 35 | 0 |
+| [lxml](cases/lxml.md) | 6.1.3 | 41 | 0 |
+| [marisa-trie](cases/marisa-trie.md) | 1.4.1 | 5 | 0 |
+| [markupsafe](cases/markupsafe.md) | 3.0.3 | 0 | 4 |
+| [msgpack](cases/msgpack.md) | 1.2.3 | 4 | 0 |
+| [msgspec](cases/msgspec.md) | 0.22.0 | 15 | 0 |
+| [multidict](cases/multidict.md) | 7.0.0 | 4 | 0 |
+| [mypy](cases/mypy.md) | 2.4.0 | 2 | 0 |
+| [ndindex](cases/ndindex.md) | 1.10.1 | 10 | 0 |
+| [numba](cases/numba.md) | 0.68.0 | 1 | 0 |
+| [numpy](cases/numpy.md) | 2.5.3 | 3 | 0 |
+| [orjson](cases/orjson.md) | 3.12.0 | 11 | 4 |
+| [ormsgpack](cases/ormsgpack.md) | 1.12.2 | 9 | 3 |
+| [pglast](cases/pglast.md) | 8.4 | 6 | 0 |
+| [psycopg-c](cases/psycopg-c.md) | 3.3.6 | 9 | 0 |
+| [py-spy](cases/py-spy.md) | 0.4.2 | 4 | 18 |
+| [pydevd](cases/pydevd.md) | 3.5.0 | 10 | 1 |
+| [pygame](cases/pygame.md) | 2.6.1 | 31 | 7 |
+| [pyjson5](cases/pyjson5.md) | 2.0.1 | 12 | 1 |
+| [pylibjpeg-libjpeg](cases/pylibjpeg-libjpeg.md) | 2.4.0 | 4 | 1 |
+| [pyobjc-core](cases/pyobjc-core.md) | 12.2.2 | 3 | 0 |
+| [pyreadstat](cases/pyreadstat.md) | 1.3.6 | 10 | 0 |
+| [pyroscope-io](cases/pyroscope-io.md) | 1.2.5 | 0 | 1 |
+| [pysam](cases/pysam.md) | 0.24.1 | 51 | 0 |
+| [python-crfsuite](cases/python-crfsuite.md) | 0.9.12 | 6 | 0 |
+| [pywinpty](cases/pywinpty.md) | 3.0.5 | 18 | 4 |
+| [rapidfuzz](cases/rapidfuzz.md) | 3.14.6 | 39 | 0 |
+| [ruamel-yaml-clib](cases/ruamel-yaml-clib.md) | 0.2.15 | 4 | 1 |
+| [ruptures](cases/ruptures.md) | 1.1.10 | 10 | 0 |
+| [sasl](cases/sasl.md) | 0.3.1 | 2 | 1 |
+| [scikit-network](cases/scikit-network.md) | 0.33.5 | 52 | 12 |
+| [selectolax](cases/selectolax.md) | 0.4.13 | 9 | 0 |
+| [sentencepiece](cases/sentencepiece.md) | 0.2.2 | 1 | 0 |
+| [spacy](cases/spacy.md) | 3.8.16 | 4 | 0 |
+| [srsly](cases/srsly.md) | 2.5.4 | 11 | 0 |
+| [thriftpy2](cases/thriftpy2.md) | 0.7.1 | 28 | 0 |
+| [uamqp](cases/uamqp.md) | 1.6.11 | 5 | 1 |
+| [uharfbuzz](cases/uharfbuzz.md) | 0.56.2 | 7 | 0 |
+| [uvloop](cases/uvloop.md) | 0.23.0 | 5 | 0 |
+| [vercel-runtime](cases/vercel-runtime.md) | 0.23.2 | 0 | 4 |
+| [versioneer](cases/versioneer.md) | 0.29 | 2 | 1 |

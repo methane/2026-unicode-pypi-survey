@@ -1,0 +1,65 @@
+group,usage_form,packages,files,static_sites,review_families,package_names
+all,any,32,60,168,49,"[""aiocsv"", ""aiohttp"", ""apsw"", ""asyncpg"", ""biopython"", ""cffi"", ""cftime"", ""cython"", ""debugpy"", ""dependency-injector"", ""gensim"", ""gevent"", ""grapheme"", ""levenshtein"", ""librt"", ""lxml"", ""marisa-trie"", ""mutf8"", ""mypy"", ""numba"", ""numpy"", ""pyahocorasick"", ""pydevd"", ""pyjson5"", ""pyqt5"", ""pyqt6"", ""pysam"", ""rapidfuzz"", ""regex"", ""srsly"", ""ujson"", ""yarl""]"
+all,c_template_api_call,1,2,2,2,"[""numpy""]"
+all,direct_api_call,30,47,80,43,"[""aiocsv"", ""aiohttp"", ""apsw"", ""asyncpg"", ""biopython"", ""cffi"", ""cftime"", ""cython"", ""debugpy"", ""dependency-injector"", ""gensim"", ""gevent"", ""grapheme"", ""levenshtein"", ""librt"", ""lxml"", ""marisa-trie"", ""mutf8"", ""mypy"", ""numpy"", ""pydevd"", ""pyjson5"", ""pyqt5"", ""pyqt6"", ""pysam"", ""rapidfuzz"", ""regex"", ""srsly"", ""ujson"", ""yarl""]"
+all,emitted_c_api_call,1,1,1,1,"[""numpy""]"
+all,forwarding_api_call,2,2,3,2,"[""apsw"", ""pyahocorasick""]"
+all,llvm_api_call_emitter,1,1,1,1,"[""numba""]"
+all,macro_dispatch_actual_call,1,1,1,1,"[""pyahocorasick""]"
+all,wrapper_call,21,31,80,20,"[""aiohttp"", ""asyncpg"", ""cffi"", ""cftime"", ""debugpy"", ""dependency-injector"", ""gensim"", ""gevent"", ""grapheme"", ""levenshtein"", ""librt"", ""lxml"", ""marisa-trie"", ""mypy"", ""numba"", ""numpy"", ""pydevd"", ""pyjson5"", ""pysam"", ""rapidfuzz"", ""regex""]"
+codegen,any,2,2,2,2,"[""numba"", ""numpy""]"
+codegen,c_template_api_call,0,0,0,0,[]
+codegen,direct_api_call,0,0,0,0,[]
+codegen,emitted_c_api_call,1,1,1,1,"[""numpy""]"
+codegen,forwarding_api_call,0,0,0,0,[]
+codegen,llvm_api_call_emitter,1,1,1,1,"[""numba""]"
+codegen,macro_dispatch_actual_call,0,0,0,0,[]
+codegen,wrapper_call,0,0,0,0,[]
+cython_template,any,1,1,1,1,"[""cython""]"
+cython_template,c_template_api_call,0,0,0,0,[]
+cython_template,direct_api_call,1,1,1,1,"[""cython""]"
+cython_template,emitted_c_api_call,0,0,0,0,[]
+cython_template,forwarding_api_call,0,0,0,0,[]
+cython_template,llvm_api_call_emitter,0,0,0,0,[]
+cython_template,macro_dispatch_actual_call,0,0,0,0,[]
+cython_template,wrapper_call,0,0,0,0,[]
+generated_cython,any,15,20,88,15,"[""aiohttp"", ""asyncpg"", ""cftime"", ""debugpy"", ""dependency-injector"", ""gensim"", ""gevent"", ""grapheme"", ""levenshtein"", ""lxml"", ""marisa-trie"", ""pydevd"", ""pyjson5"", ""pysam"", ""rapidfuzz""]"
+generated_cython,c_template_api_call,0,0,0,0,[]
+generated_cython,direct_api_call,14,18,34,12,"[""aiohttp"", ""asyncpg"", ""cftime"", ""debugpy"", ""dependency-injector"", ""gensim"", ""gevent"", ""grapheme"", ""levenshtein"", ""lxml"", ""marisa-trie"", ""pydevd"", ""pyjson5"", ""pysam""]"
+generated_cython,emitted_c_api_call,0,0,0,0,[]
+generated_cython,forwarding_api_call,0,0,0,0,[]
+generated_cython,llvm_api_call_emitter,0,0,0,0,[]
+generated_cython,macro_dispatch_actual_call,0,0,0,0,[]
+generated_cython,wrapper_call,15,20,54,13,"[""aiohttp"", ""asyncpg"", ""cftime"", ""debugpy"", ""dependency-injector"", ""gensim"", ""gevent"", ""grapheme"", ""levenshtein"", ""lxml"", ""marisa-trie"", ""pydevd"", ""pyjson5"", ""pysam"", ""rapidfuzz""]"
+generated_other,any,0,0,0,0,[]
+generated_other,c_template_api_call,0,0,0,0,[]
+generated_other,direct_api_call,0,0,0,0,[]
+generated_other,emitted_c_api_call,0,0,0,0,[]
+generated_other,forwarding_api_call,0,0,0,0,[]
+generated_other,llvm_api_call_emitter,0,0,0,0,[]
+generated_other,macro_dispatch_actual_call,0,0,0,0,[]
+generated_other,wrapper_call,0,0,0,0,[]
+handwritten,any,19,35,73,36,"[""aiocsv"", ""apsw"", ""asyncpg"", ""biopython"", ""cffi"", ""levenshtein"", ""librt"", ""mutf8"", ""mypy"", ""numba"", ""numpy"", ""pyahocorasick"", ""pyjson5"", ""pyqt5"", ""pyqt6"", ""rapidfuzz"", ""regex"", ""ujson"", ""yarl""]"
+handwritten,c_template_api_call,1,2,2,2,"[""numpy""]"
+handwritten,direct_api_call,17,27,44,30,"[""aiocsv"", ""apsw"", ""asyncpg"", ""biopython"", ""cffi"", ""levenshtein"", ""librt"", ""mutf8"", ""mypy"", ""numpy"", ""pyjson5"", ""pyqt5"", ""pyqt6"", ""rapidfuzz"", ""regex"", ""ujson"", ""yarl""]"
+handwritten,emitted_c_api_call,0,0,0,0,[]
+handwritten,forwarding_api_call,0,0,0,0,[]
+handwritten,llvm_api_call_emitter,0,0,0,0,[]
+handwritten,macro_dispatch_actual_call,1,1,1,1,"[""pyahocorasick""]"
+handwritten,wrapper_call,7,11,26,10,"[""cffi"", ""librt"", ""mypy"", ""numba"", ""numpy"", ""rapidfuzz"", ""regex""]"
+test,any,2,2,3,2,"[""apsw"", ""pyahocorasick""]"
+test,c_template_api_call,0,0,0,0,[]
+test,direct_api_call,0,0,0,0,[]
+test,emitted_c_api_call,0,0,0,0,[]
+test,forwarding_api_call,2,2,3,2,"[""apsw"", ""pyahocorasick""]"
+test,llvm_api_call_emitter,0,0,0,0,[]
+test,macro_dispatch_actual_call,0,0,0,0,[]
+test,wrapper_call,0,0,0,0,[]
+vendor_or_compatibility,any,1,1,1,1,"[""srsly""]"
+vendor_or_compatibility,c_template_api_call,0,0,0,0,[]
+vendor_or_compatibility,direct_api_call,1,1,1,1,"[""srsly""]"
+vendor_or_compatibility,emitted_c_api_call,0,0,0,0,[]
+vendor_or_compatibility,forwarding_api_call,0,0,0,0,[]
+vendor_or_compatibility,llvm_api_call_emitter,0,0,0,0,[]
+vendor_or_compatibility,macro_dispatch_actual_call,0,0,0,0,[]
+vendor_or_compatibility,wrapper_call,0,0,0,0,[]

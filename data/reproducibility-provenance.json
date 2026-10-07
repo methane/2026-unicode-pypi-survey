@@ -1,0 +1,100 @@
+{
+  "ranking": {
+    "snapshot_url": "https://raw.githubusercontent.com/hugovk/top-pypi-packages/e6b5b398c1fcc783f593031f99bc2c772d64c6ef/top-pypi-packages.json",
+    "commit": "e6b5b398c1fcc783f593031f99bc2c772d64c6ef",
+    "snapshot_last_update_utc": "2026-10-01 12:41:32",
+    "download_ranking_window": "2026-09-01 through 2026-09-30 (calendar month)",
+    "ranking_source": "ClickHouse",
+    "ranking_sha256": "a0458d45ec5c696a482b44f94cc0eb83f7d5f3167e53c066b2a66cbfffa98358",
+    "top4000_names_sha256": "d3710dafb8a01c8f1b413d6188d5b9ae3670069d1bd4cc3b4456d1e36a557199",
+    "freeze_time_utc": "2026-10-02T17:23:45.708767+00:00",
+    "selection": "Exact first 4000 rows in snapshot order; latest PyPI info.version at metadata fetch; one non-yanked sdist from that release; no historical fallback.",
+    "primary_symbols": [
+      "PyUnicode_New",
+      "PyUnicode_WRITE",
+      "PyUnicode_WriteChar",
+      "PyUnicode_CopyCharacters",
+      "PyUnicode_Fill"
+    ],
+    "read_symbols": [
+      "PyUnicode_DATA",
+      "PyUnicode_1BYTE_DATA",
+      "PyUnicode_2BYTE_DATA",
+      "PyUnicode_4BYTE_DATA",
+      "PyUnicode_KIND",
+      "PyUnicode_READ",
+      "PyUnicode_READ_CHAR"
+    ],
+    "writer_symbols": "_?PyUnicodeWriter_*"
+  },
+  "upstream_filter_reference": {
+    "repository": "https://github.com/vstinner/misc",
+    "commit": "f1ba71b20c650f0e63920fe6f25292794c38f94a",
+    "scripts": {
+      "download_pypi_top.py": {
+        "url": "https://github.com/vstinner/misc/blob/f1ba71b20c650f0e63920fe6f25292794c38f94a/cpython/download_pypi_top.py",
+        "sha256": "2ddb67cb6c2f7d5683816a24bd03abde6a2921083b4d750ef5614e4994b75c2f"
+      },
+      "search_pypi_top.py": {
+        "url": "https://github.com/vstinner/misc/blob/f1ba71b20c650f0e63920fe6f25292794c38f94a/cpython/search_pypi_top.py",
+        "sha256": "01fb6adf2420f7ba68ee5fd97642fea256cfdc5ea85cd49e05ec3a653b3138d1"
+      }
+    },
+    "attribution": "Filename, first256bytes binary, Cython firstline and pythoncapi_compat.h exclusion behavior follows Victor Stinner misc search_pypi_top.py. Upstream files linked, not redistributed."
+  },
+  "original_analysis_scripts": {
+    "survey.py": {
+      "sha256": "47298a4ccee26c253288299c93f2f6800e3cc727f850776c2c804667053568f5",
+      "description": "Original survey analysis preserved outside this portable publication; public reproduction adapts lexical rules and safe iteration."
+    },
+    "canonical_method.py": {
+      "sha256": "d6ba1691b6fd991f7f13378f987334fcd1d709ca9926340b2b8dbb4704545491",
+      "description": "Original survey analysis preserved outside this portable publication; public reproduction adapts lexical rules and safe iteration."
+    },
+    "read-access-analysis/recover_sources.py": {
+      "sha256": "7721bc012dc98865bb75ee48db225a49f5e88b382d4675c9d239f403684897af",
+      "description": "Original survey analysis preserved outside this portable publication; public reproduction adapts lexical rules and safe iteration."
+    }
+  },
+  "metadata": {
+    "rows": 4000,
+    "status_counts": {
+      "scanned": 3787,
+      "no_current_sdist": 211,
+      "partial_scan": 1,
+      "metadata_unavailable": 1
+    },
+    "selected_sdist_count": 3788,
+    "recovery_status_counts": {
+      "scanned": 3788,
+      "no_current_sdist": 211,
+      "metadata_unavailable": 1
+    },
+    "selection": "Exact frozen current release URL selected by original survey and verified against pinned upstream find_url for all4000names; no live metadata refresh. Latest meant latest at recorded fetch time."
+  },
+  "parser_changes": [
+    "Standalone scanner combines original write tokens and expanded recovery read tokens; original_write_scope flag preserves initial symbol subset.",
+    "Exact upstream filename endswith filter used, including .js.map (not all .map); original recovery independently used a broader .map suffix skip.",
+    "All candidate metadata/hits retained by default; original scripts retained source bytes, new portable default does not.",
+    "Optional source retention supports candidate files or all native/Unicode-bearing files; no third-party source corpus is bundled.",
+    "128MiB candidate text-member limit is explicit; original recovery limit never triggered in observed corpus. Every future skip is enumerated; no global expanded-size cutoff.",
+    "Lexical classifications are heuristics copied from original analysis; manual semantic A/B/C/U inventory requires separate source review and is not automatically reproduced."
+  ],
+  "reproduction_asset_sha256": {
+    "scripts/static_lexical.py": "64b6cf6c6b477b6e14b6cde650ef2a85b1ffbc89222788bb65bde463269d8b2b",
+    "scripts/test_scanner.py": "26fec38ab26ed84b1b17d61673cc09c1078084885f3dbfdb4a1b0b0daa1d0754",
+    "scripts/verify_frozen_inputs.py": "4d8a08daae63c722824c20ea667680bdf5ee57636c784bc20791126433107554",
+    "scripts/scan_sdists.py": "7c3e863f411eed355f4ccdc63a9b6ead156a4a541d207389607cf66a981e6836",
+    "data/source-metadata.jsonl": "25a710f2fdd80dedd0ed44c89d6784065ed1a2800ef41786c1937382c8b01a11",
+    "data/top4000.txt": "d3710dafb8a01c8f1b413d6188d5b9ae3670069d1bd4cc3b4456d1e36a557199",
+    "data/top4000.csv": "7f5bf2b3fecb8ea50528652bfc1f44e0b6b576d02a8ff264e973c9173beb9246",
+    "data/snapshot-provenance.json": "a36d951558439be980cdb25fa29584b8e30d958aef247d4b1971404cb2da2002",
+    "data/ranking-snapshot.json": "a0458d45ec5c696a482b44f94cc0eb83f7d5f3167e53c066b2a66cbfffa98358",
+    "scripts/README.md": "9c64a1108fe6e2ed8d7af5f8ebef3d6bbd9466d26c1e5fbc2fc368dda4c06adb"
+  },
+  "verification_commands": [
+    "python3 scripts/verify_frozen_inputs.py",
+    "python3 scripts/test_scanner.py",
+    "python3 scripts/scan_sdists.py --limit 25"
+  ]
+}

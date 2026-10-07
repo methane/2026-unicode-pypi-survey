@@ -1,0 +1,560 @@
+{
+  "by_original_scope": {
+    "PyUnicode_AsUCS4Copy_supporting": {
+      "functions": 1,
+      "classes": {
+        "B": 1
+      },
+      "packages": [
+        "pygame"
+      ]
+    },
+    "borrowed_unicode": {
+      "functions": 1,
+      "classes": {
+        "B": 1
+      },
+      "packages": [
+        "wcwidth"
+      ]
+    },
+    "fsr_read": {
+      "functions": 428,
+      "classes": {
+        "B": 345,
+        "A": 41,
+        "C": 42
+      },
+      "packages": [
+        "aiocsv",
+        "apsw",
+        "backports-datetime-fromisoformat",
+        "biopython",
+        "bitarray",
+        "cffi",
+        "ddtrace",
+        "duckdb",
+        "jpype1",
+        "levenshtein",
+        "lxml",
+        "markupsafe",
+        "msgspec",
+        "multidict",
+        "mutf8",
+        "mysql-connector",
+        "mysql-connector-python",
+        "numba",
+        "numpy",
+        "oracledb",
+        "orjson",
+        "ormsgpack",
+        "pillow",
+        "polyleven",
+        "pyahocorasick",
+        "rapidfuzz",
+        "regex",
+        "spacy"
+      ]
+    },
+    "legacy_pointer_read": {
+      "functions": 10,
+      "classes": {
+        "C": 4,
+        "B": 6
+      },
+      "packages": [
+        "scandir"
+      ]
+    },
+    "legacy_unicode_api": {
+      "functions": 8,
+      "classes": {
+        "B": 6,
+        "A": 2
+      },
+      "packages": [
+        "cffi",
+        "pyahocorasick"
+      ]
+    },
+    "legacy_wchar_read": {
+      "functions": 4,
+      "classes": {
+        "B": 2,
+        "A": 2
+      },
+      "packages": [
+        "scikit-network"
+      ]
+    },
+    "owned_ucs4_copy_read": {
+      "functions": 2,
+      "classes": {
+        "B": 2
+      },
+      "packages": [
+        "uharfbuzz"
+      ]
+    },
+    "owned_unicode_copy": {
+      "functions": 30,
+      "classes": {
+        "B": 24,
+        "C": 5,
+        "A": 1
+      },
+      "packages": [
+        "asyncpg",
+        "cffi",
+        "numpy",
+        "pillow",
+        "pyahocorasick",
+        "wcwidth"
+      ]
+    },
+    "primary_fsr_read": {
+      "functions": 72,
+      "classes": {
+        "B": 53,
+        "C": 14,
+        "A": 5
+      },
+      "packages": [
+        "pybase64",
+        "pygame",
+        "pygeohash",
+        "pyjson5",
+        "pymupdf",
+        "pyobjc-core",
+        "pyqt5",
+        "pyqt5-sip",
+        "pyqt6",
+        "pyqt6-sip",
+        "pyroscope-io",
+        "simplejson",
+        "stpyv8",
+        "tensorstore",
+        "ujson",
+        "yarl"
+      ]
+    },
+    "raw_layout_bypass": {
+      "functions": 2,
+      "classes": {
+        "C": 2
+      },
+      "packages": [
+        "py-spy"
+      ]
+    },
+    "raw_layout_utf8_bytes": {
+      "functions": 105,
+      "classes": {
+        "C": 38,
+        "B": 64,
+        "A": 3
+      },
+      "packages": [
+        "msgspec"
+      ]
+    },
+    "raw_representation_read": {
+      "functions": 535,
+      "classes": {
+        "B": 262,
+        "C": 231,
+        "A": 42
+      },
+      "packages": [
+        "aiohttp",
+        "aiokafka",
+        "asyncpg",
+        "av",
+        "cftime",
+        "clickhouse-driver",
+        "cython",
+        "cytoolz",
+        "debugpy",
+        "dependency-injector",
+        "editdistance",
+        "fastavro",
+        "fastparquet",
+        "frozendict",
+        "gensim",
+        "gevent",
+        "grapheme",
+        "grpcio",
+        "grpcio-tools",
+        "hdbscan",
+        "httptools",
+        "levenshtein",
+        "librt",
+        "line-profiler",
+        "lupa",
+        "lxml",
+        "marisa-trie",
+        "msgpack",
+        "mypy",
+        "ndindex",
+        "pglast",
+        "psycopg-c",
+        "pydevd",
+        "pygame",
+        "pyjson5",
+        "pylibjpeg-libjpeg",
+        "pyreadstat",
+        "pysam",
+        "python-crfsuite",
+        "rapidfuzz",
+        "ruamel-yaml-clib",
+        "ruptures",
+        "scikit-network",
+        "selectolax",
+        "spacy",
+        "srsly",
+        "thriftpy2",
+        "typed-ast",
+        "uamqp",
+        "uharfbuzz",
+        "uvloop",
+        "vercel-runtime"
+      ]
+    },
+    "raw_utf8_cache_layout_read": {
+      "functions": 1,
+      "classes": {
+        "C": 1
+      },
+      "packages": [
+        "sentencepiece"
+      ]
+    },
+    "write_api_source_operand": {
+      "functions": 6,
+      "classes": {
+        "C": 6
+      },
+      "packages": [
+        "cython",
+        "gevent",
+        "pyodbc",
+        "pysam"
+      ]
+    }
+  },
+  "by_origin": {
+    "compiler_emitter": {
+      "functions": 2,
+      "classes": {
+        "B": 2
+      },
+      "packages": [
+        "cython"
+      ]
+    },
+    "compiler_runtime": {
+      "functions": 40,
+      "classes": {
+        "C": 6,
+        "B": 22,
+        "A": 12
+      },
+      "packages": [
+        "cython",
+        "librt",
+        "mypy"
+      ]
+    },
+    "compiler_runtime_cpython_adaptation": {
+      "functions": 4,
+      "classes": {
+        "C": 4
+      },
+      "packages": [
+        "librt",
+        "mypy"
+      ]
+    },
+    "cpython_backport": {
+      "functions": 13,
+      "classes": {
+        "B": 7,
+        "C": 4,
+        "A": 2
+      },
+      "packages": [
+        "backports-datetime-fromisoformat",
+        "scandir",
+        "typed-ast"
+      ]
+    },
+    "cpython_copy": {
+      "functions": 11,
+      "classes": {
+        "C": 5,
+        "A": 2,
+        "B": 4
+      },
+      "packages": [
+        "frozendict",
+        "librt",
+        "mypy"
+      ]
+    },
+    "cpython_debugger_copy": {
+      "functions": 1,
+      "classes": {
+        "B": 1
+      },
+      "packages": [
+        "cython"
+      ]
+    },
+    "generated_cython": {
+      "functions": 426,
+      "classes": {
+        "B": 216,
+        "C": 185,
+        "A": 25
+      },
+      "packages": [
+        "aiohttp",
+        "aiokafka",
+        "asyncpg",
+        "av",
+        "cftime",
+        "clickhouse-driver",
+        "cytoolz",
+        "debugpy",
+        "dependency-injector",
+        "editdistance",
+        "fastavro",
+        "fastparquet",
+        "gensim",
+        "grapheme",
+        "grpcio",
+        "grpcio-tools",
+        "hdbscan",
+        "httptools",
+        "levenshtein",
+        "line-profiler",
+        "lupa",
+        "lxml",
+        "marisa-trie",
+        "msgpack",
+        "ndindex",
+        "pglast",
+        "psycopg-c",
+        "pydevd",
+        "pygame",
+        "pyjson5",
+        "pylibjpeg-libjpeg",
+        "pyreadstat",
+        "python-crfsuite",
+        "rapidfuzz",
+        "ruamel-yaml-clib",
+        "ruptures",
+        "scikit-network",
+        "selectolax",
+        "spacy",
+        "srsly",
+        "thriftpy2",
+        "uamqp",
+        "uharfbuzz",
+        "uvloop"
+      ]
+    },
+    "generated_cython_project": {
+      "functions": 2,
+      "classes": {
+        "A": 2
+      },
+      "packages": [
+        "pysam"
+      ]
+    },
+    "generated_cython_runtime": {
+      "functions": 61,
+      "classes": {
+        "C": 37,
+        "B": 23,
+        "A": 1
+      },
+      "packages": [
+        "gevent",
+        "pysam"
+      ]
+    },
+    "generator_runtime_handwritten": {
+      "functions": 2,
+      "classes": {
+        "C": 2
+      },
+      "packages": [
+        "pyqt5-sip",
+        "pyqt6-sip"
+      ]
+    },
+    "handwritten": {
+      "functions": 5,
+      "classes": {
+        "A": 1,
+        "C": 3,
+        "B": 1
+      },
+      "packages": [
+        "pysam",
+        "rapidfuzz",
+        "uharfbuzz"
+      ]
+    },
+    "handwritten_candidate": {
+      "functions": 335,
+      "classes": {
+        "B": 271,
+        "A": 28,
+        "C": 36
+      },
+      "packages": [
+        "aiocsv",
+        "apsw",
+        "asyncpg",
+        "biopython",
+        "bitarray",
+        "cffi",
+        "ddtrace",
+        "duckdb",
+        "jpype1",
+        "levenshtein",
+        "lxml",
+        "markupsafe",
+        "multidict",
+        "mutf8",
+        "mysql-connector",
+        "mysql-connector-python",
+        "numba",
+        "numpy",
+        "oracledb",
+        "orjson",
+        "pillow",
+        "polyleven",
+        "pyahocorasick",
+        "pybase64",
+        "pygame",
+        "pygeohash",
+        "pyjson5",
+        "pymupdf",
+        "pyobjc-core",
+        "pyodbc",
+        "pyqt5",
+        "pyqt6",
+        "rapidfuzz",
+        "regex",
+        "simplejson",
+        "stpyv8",
+        "tensorstore",
+        "ujson",
+        "wcwidth",
+        "yarl"
+      ]
+    },
+    "handwritten_embedded_in_generated_c": {
+      "functions": 1,
+      "classes": {
+        "B": 1
+      },
+      "packages": [
+        "gensim"
+      ]
+    },
+    "handwritten_ffi_consumer": {
+      "functions": 3,
+      "classes": {
+        "C": 3
+      },
+      "packages": [
+        "ormsgpack"
+      ]
+    },
+    "handwritten_native_algorithm": {
+      "functions": 47,
+      "classes": {
+        "C": 4,
+        "B": 30,
+        "A": 13
+      },
+      "packages": [
+        "numba"
+      ]
+    },
+    "handwritten_original": {
+      "functions": 110,
+      "classes": {
+        "C": 42,
+        "B": 65,
+        "A": 3
+      },
+      "packages": [
+        "msgspec"
+      ]
+    },
+    "handwritten_raw_layout": {
+      "functions": 2,
+      "classes": {
+        "C": 2
+      },
+      "packages": [
+        "py-spy"
+      ]
+    },
+    "handwritten_test": {
+      "functions": 1,
+      "classes": {
+        "C": 1
+      },
+      "packages": [
+        "sentencepiece"
+      ]
+    },
+    "handwritten_vendor_derived": {
+      "functions": 1,
+      "classes": {
+        "C": 1
+      },
+      "packages": [
+        "pyroscope-io"
+      ]
+    },
+    "vendor": {
+      "functions": 6,
+      "classes": {
+        "B": 4,
+        "A": 2
+      },
+      "packages": [
+        "spacy"
+      ]
+    },
+    "vendor_generic_algorithm": {
+      "functions": 129,
+      "classes": {
+        "B": 116,
+        "C": 8,
+        "A": 5
+      },
+      "packages": [
+        "levenshtein",
+        "rapidfuzz"
+      ]
+    },
+    "vendor_markupsafe": {
+      "functions": 3,
+      "classes": {
+        "B": 3
+      },
+      "packages": [
+        "vercel-runtime"
+      ]
+    }
+  }
+}

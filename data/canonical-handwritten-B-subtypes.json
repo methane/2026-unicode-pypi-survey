@@ -1,0 +1,15 @@
+{
+  "B_functions": 272,
+  "subtype_function_counts_overlap": {
+    "arbitrary_index": 90,
+    "scalar_single_character": 19,
+    "caller_start_range": 169,
+    "reset_backtracking": 38,
+    "multiple_passes": 62,
+    "lookahead_lookbehind": 58,
+    "mixed": 24,
+    "subset_nonzero_start": 4,
+    "backward": 48
+  },
+  "warning": "Counts overlap and scalar/current-range access is not proof of a materialized-FSR requirement; inspect per-case source and index expressions."
+}

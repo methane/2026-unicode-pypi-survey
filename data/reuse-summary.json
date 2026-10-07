@@ -1,0 +1,47 @@
+{
+  "candidate_packages": 53,
+  "regex_baseline_excluded": true,
+  "other_packages": 52,
+  "strict_nonascii_scoped_borrow_status_counts": {
+    "no": 13,
+    "yes": 28,
+    "possible": 11
+  },
+  "strong_successful_partial_other_packages": [
+    "apsw",
+    "lxml",
+    "polyleven",
+    "pyahocorasick",
+    "pyjson5",
+    "rapidfuzz",
+    "simplejson",
+    "spacy"
+  ],
+  "strong_successful_partial_package_count": 8,
+  "strong_successful_partial_implementation_families": 7,
+  "family_deduplication": "polyleven and spaCy share the same polyleven/mBLeven engine; PyQt5/PyQt6/SIP are one whole-conversion family. RapidFuzz shared metrics are not counted a second time from Levenshtein vendor headers; verified own Levenshtein bulk algorithms are separately identified.",
+  "additional_python_native_boundary_package": "numba",
+  "including_boundary_packages": 9,
+  "including_boundary_families": 8,
+  "early_invalid_or_prefix_only_additional_yes": [
+    "backports-datetime-fromisoformat",
+    "bitarray",
+    "oracledb"
+  ],
+  "scope": "Exhaustive yes/possible/no review of the53 canonical-native candidate package names using frozen archive source only. Not a count across all4000 or an extrapolation to PyPI.",
+  "counterfactual": "Whole-string FSR materialization; last active lease release immediately evicts it; no persistent Python-side cache or prepared caller owner is reused.",
+  "not_benchmarked": true,
+  "validation": {
+    "independently_rehashed_source_files": 112,
+    "reviewed_ranges": 219,
+    "classification_rows": 53,
+    "errors": []
+  },
+  "limitations": [
+    "Source exposure/branch activation is static, not a built runtime test.",
+    "Possible judgments preserve runtime-template, copied-vendor/historical-binding, conditional formatted-source or external-provider lifetime uncertainty.",
+    "Generated helper callers were checked only along identified paths; this is not a complete generated call graph.",
+    "Numba unbox/owner contracts are verified; every compiled-signature callwrapper cleanup sequence was not present in the retained corpus.",
+    "No workload frequency, allocation latency or empirical performance measurements."
+  ]
+}

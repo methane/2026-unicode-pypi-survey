@@ -1,0 +1,80 @@
+[
+  {
+    "package": "cython",
+    "version": "3.3.0",
+    "evidence_ids": [
+      "L0022"
+    ],
+    "role": "GDB debugger",
+    "interpretation": "Substantive Python3 full-object layout dependence; excludes obsolete full-object hash branches and copied compatibility/core definitions. Static presence, not build execution."
+  },
+  {
+    "package": "ddtrace",
+    "version": "4.15.4",
+    "evidence_ids": [
+      "L1128"
+    ],
+    "role": "native package implementation",
+    "interpretation": "Substantive Python3 full-object layout dependence; excludes obsolete full-object hash branches and copied compatibility/core definitions. Static presence, not build execution."
+  },
+  {
+    "package": "lxml",
+    "version": "6.1.3",
+    "evidence_ids": [
+      "L0877",
+      "L0878"
+    ],
+    "role": "native package implementation",
+    "interpretation": "Substantive Python3 full-object layout dependence; excludes obsolete full-object hash branches and copied compatibility/core definitions. Static presence, not build execution."
+  },
+  {
+    "package": "multidict",
+    "version": "7.0.0",
+    "evidence_ids": [
+      "L1040",
+      "L1041"
+    ],
+    "role": "native package implementation",
+    "interpretation": "Substantive Python3 full-object layout dependence; excludes obsolete full-object hash branches and copied compatibility/core definitions. Static presence, not build execution."
+  },
+  {
+    "package": "numba",
+    "version": "0.68.0",
+    "evidence_ids": [
+      "L0926"
+    ],
+    "role": "native package implementation",
+    "interpretation": "Substantive Python3 full-object layout dependence; excludes obsolete full-object hash branches and copied compatibility/core definitions. Static presence, not build execution."
+  },
+  {
+    "package": "numpy",
+    "version": "2.5.3",
+    "evidence_ids": [
+      "L0923",
+      "L1030"
+    ],
+    "role": "native package implementation",
+    "interpretation": "Substantive Python3 full-object layout dependence; excludes obsolete full-object hash branches and copied compatibility/core definitions. Static presence, not build execution."
+  },
+  {
+    "package": "py-spy",
+    "version": "0.4.2",
+    "evidence_ids": [
+      "L0016",
+      "L0018"
+    ],
+    "role": "remote profiler",
+    "interpretation": "Substantive Python3 full-object layout dependence; excludes obsolete full-object hash branches and copied compatibility/core definitions. Static presence, not build execution."
+  },
+  {
+    "package": "pyobjc-core",
+    "version": "12.2.2",
+    "evidence_ids": [
+      "L1056",
+      "L1057",
+      "L1058"
+    ],
+    "role": "native package implementation",
+    "interpretation": "Substantive Python3 full-object layout dependence; excludes obsolete full-object hash branches and copied compatibility/core definitions. Static presence, not build execution."
+  }
+]

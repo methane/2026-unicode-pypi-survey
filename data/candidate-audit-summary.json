@@ -1,0 +1,13 @@
+{
+  "token_sites": 6501,
+  "statuses": {
+    "explicit_exclusion": 4187,
+    "reviewed_function": 2278,
+    "excluded_compatibility_api_implementation": 6,
+    "lexical_definition_comment_or_noncode": 30
+  },
+  "unresolved_token_sites": 0,
+  "default_unresolved_token_sites": 0,
+  "raw_layout_files": 314,
+  "unresolved_layout_files": []
+}
